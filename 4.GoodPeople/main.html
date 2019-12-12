@@ -580,700 +580,415 @@
 			</div>
 		</div>
 	</header>
-	<!-- 헤더 스크립트 -->
-	<script>
-	// 언어선택
-	const html = document.querySelector('html');
-	const lang = html.querySelector('ul.lang');
-	const liActive = lang.querySelector('ul.lang > li.active');
-
-	liActive.addEventListener('click', () => {
-		lang.classList.toggle('active');
-	});
-
-	// 모바일 메뉴
-	const btnMenuMo = html.querySelector('.btn_menu_mo');
-	const menuMoArea = html.querySelector('.menu_mo_area');
-
-	btnMenuMo.addEventListener('click', () => {
-		html.classList.toggle('hidden');
-		btnMenuMo.classList.toggle('active');
-		menuMoArea.classList.toggle('active');
-	});
-	</script>
+	<!-- 메인 -->
 	<main>
-	<div class="contents main">
-		<div class="main_slide_area">
-			<ul class="main_slide">
-				<li class="slide_page">
-					<div class="slide_cont">
-						<span>세계 눈의 날 캠페인</span>
-						<h3>가난을 없애주는 안경</h3>
-						<p class="cont">
-							10월 10일 세계 눈의 날<br/>만원으로 아동들에게 안경을, 더 나은 삶을 선물합니다!
-						</p>
-						<a href="" class="btn_more">자세히보기</a>
-					</div>
-					<div class="ongoing_bar">
-						<div class="left"></div>
-						<div class="right"></div>
-					</div>
-				</li>
-				<li class="slide_page">
-					<div class="slide_cont">
-						<span>크리스마스 선물금 캠페인</span>
-						<h3>멋진 산타가 되어주세요.</h3>
-						<a href="" class="btn_more">자세히보기</a>
-					</div>
-					<div class="ongoing_bar">
-						<div class="left"></div>
-						<div class="right"></div>
-					</div>
-				</li>
-				<li class="slide_page">
-					<div class="slide_cont">
-						<span>좋은마음캠페인</span>
-						<h3>우리는 가족입니다</h3>
-						<p class="cont">
-							어른들의 무책임으로 혼자가 된 아이들에게 가족이 되어준 그룹홈<br/>하지만, 종사자 외에는 함께 살 수 없다는 정책으로 아이들은 또 다시 가족과 이별해야 합니다.
-						</p>
-						<a href="" class="btn_more">자세히보기</a>
-					</div>
-					<div class="ongoing_bar">
-						<div class="left"></div>
-						<div class="right"></div>
-					</div>
-				</li>
-				<li class="slide_page">
-					<div class="slide_cont">
-						<span>꿈 가득 희망 가득 편지쓰기대회</span>
-						<h3>나의 특별한 친구<br/>민정이에게</h3>
-						<p class="cont">
-							따뜻함을 담은 응원의 편지를 보내주세요
-						</p>
-						<a href="" class="btn_more">자세히보기</a>
-					</div>
-					<div class="ongoing_bar">
-						<div class="left"></div>
-						<div class="right"></div>
-					</div>
-				</li>
-				<li class="slide_page">
-					<div class="slide_cont">
-						<span>좋은마음캠페인</span>
-						<h3>바쁜 일상에 지쳐<br/>당신을 잃어가는 당신에게 찾아온<br/>한 가장의 고백</h3>
-						<a href="" class="btn_more">자세히보기</a>
-					</div>
-					<div class="ongoing_bar">
-						<div class="left"></div>
-						<div class="right"></div>
-					</div>
-				</li>
-			</ul>
-			<div class="btn_slide_area">
-				<span class="btn_slide">slide1</span>
-				<span class="btn_slide">slide2</span>
-				<span class="btn_slide">slide3</span>
-				<span class="btn_slide">slide4</span>
-				<span class="btn_slide">slide5</span>
-			</div>
-			<button class="btn_page prev">이전슬라이드</button>
-			<button class="btn_page next">다음슬라이드</button>
-		</div>
-		<div class="support">
-			<div class="inner type1">
-				<ul class="support_list">
-					<li>
-						<a href="">
-							10월 뉴스레터
-						</a>
+		<div class="contents main">
+			<div class="main_slide_area">
+				<ul class="main_slide">
+					<li class="slide_page">
+						<div class="slide_cont">
+							<span>세계 눈의 날 캠페인</span>
+							<h3>가난을 없애주는 안경</h3>
+							<p class="cont">
+								10월 10일 세계 눈의 날<br/>만원으로 아동들에게 안경을, 더 나은 삶을 선물합니다!
+							</p>
+							<a href="" class="btn_more">자세히보기</a>
+						</div>
+						<div class="ongoing_bar">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
 					</li>
-					<li>
-						<a href="">
-							2018 연차보고서 
-						</a>
+					<li class="slide_page">
+						<div class="slide_cont">
+							<span>크리스마스 선물금 캠페인</span>
+							<h3>멋진 산타가 되어주세요.</h3>
+							<a href="" class="btn_more">자세히보기</a>
+						</div>
+						<div class="ongoing_bar">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
 					</li>
-					<li>
-						<a href="">
-							2018 사업보고 
-						</a>
+					<li class="slide_page">
+						<div class="slide_cont">
+							<span>좋은마음캠페인</span>
+							<h3>우리는 가족입니다</h3>
+							<p class="cont">
+								어른들의 무책임으로 혼자가 된 아이들에게 가족이 되어준 그룹홈<br/>하지만, 종사자 외에는 함께 살 수 없다는 정책으로 아이들은 또 다시 가족과 이별해야 합니다.
+							</p>
+							<a href="" class="btn_more">자세히보기</a>
+						</div>
+						<div class="ongoing_bar">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
 					</li>
-					<li>
-						<a href="">
-							2019 희망박스 
-						</a>
+					<li class="slide_page">
+						<div class="slide_cont">
+							<span>꿈 가득 희망 가득 편지쓰기대회</span>
+							<h3>나의 특별한 친구<br/>민정이에게</h3>
+							<p class="cont">
+								따뜻함을 담은 응원의 편지를 보내주세요
+							</p>
+							<a href="" class="btn_more">자세히보기</a>
+						</div>
+						<div class="ongoing_bar">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
+					</li>
+					<li class="slide_page">
+						<div class="slide_cont">
+							<span>좋은마음캠페인</span>
+							<h3>바쁜 일상에 지쳐<br/>당신을 잃어가는 당신에게 찾아온<br/>한 가장의 고백</h3>
+							<a href="" class="btn_more">자세히보기</a>
+						</div>
+						<div class="ongoing_bar">
+							<div class="left"></div>
+							<div class="right"></div>
+						</div>
 					</li>
 				</ul>
+				<div class="btn_slide_area">
+					<span class="btn_slide">slide1</span>
+					<span class="btn_slide">slide2</span>
+					<span class="btn_slide">slide3</span>
+					<span class="btn_slide">slide4</span>
+					<span class="btn_slide">slide5</span>
+				</div>
+				<button class="btn_page prev">이전슬라이드</button>
+				<button class="btn_page next">다음슬라이드</button>
 			</div>
-		</div>
-		<div class="campaign">
-			<div class="inner">
-				<h3>굿피플 캠페인</h3>
-				<ul class="campaign_list">
-					<li>
-						<a href="">
-							<div class="campaign_img">
-								<img src="images/img_campaign1.jpg" />
-							</div>
-							<div class="campaign_cont">
-								<div class="progress_area">
-									<div class="progress_bar">
-										<p>D-69</p>
-									</div>
-								</div>
-								<div class="campaign_text">
-									<h4>[국내아동지원] 우리 모두 오랑해</h4>
-									<p class="more">자세히 보기</p>
-								</div>
-							</div>
-							<p class="state">진행중</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="campaign_img">
-								<img src="images/img_campaign2.jpg" />
-							</div>
-							<div class="campaign_cont">
-								<div class="progress_area">
-									<div class="progress_bar">
-										<p>D-38</p>
-									</div>
-								</div>
-								<div class="campaign_text">
-									<h4>[국내아동후원] 세상을 바꾸는 기적의 시작 Miracle Action</h4>
-									<p class="more">자세히 보기</p>
-								</div>
-							</div>
-							<p class="state">진행중</p>
-						</a>
-					</li>
-					<li>
-						<a href="">
-							<div class="campaign_img">
-								<img src="images/img_campaign3.jpg" />
-							</div>
-							<div class="campaign_cont">
-								<div class="progress_area">
-									<div class="progress_bar">
-										<p>D-8</p>
-									</div>
-								</div>
-								<div class="campaign_text">
-									<h4>[국내아동지원] 가난과 지적장애의 굴레, 언제쯤 벗어날 수 있을까요?</h4>
-									<p class="more">자세히 보기</p>
-								</div>
-							</div>
-							<p class="state">진행중</p>
-						</a>
-					</li>
-				</ul>
-				<p class="campaign_more">
-					<a href="">
-						더 많은 캠페인 보기
-					</a>
-				</p>
-			</div>
-		</div>
-		<div class="news">
-			<ul class="news_list">
-				<li>
-					<a href="">
-						<img src="images/img_news1.jpg" />
-						<div class="news_cont">
-							<p class="news_label">굿피플 소식</p>
-							<h3>네이처랩-굿피플, 여성의 건강과 안전을 위해 업무협약 진행</h3>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/img_news2.jpg" />
-						<div class="news_cont">
-							<p class="news_label">굿피플 소식</p>
-							<h3>굿피플, 한국아동청소년그룹홈협의회와 국내아동사업의 체계적인 지원 네트워크 구축</h3>
-						</div>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/img_news3.jpg" />
-						<div class="news_cont">
-							<p class="news_label">굿피플 소식</p>
-							<h3>굿피플 x 롯데하이마트, 추석맞이 봉사활동 진행</h3>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="campaign_review">
-			<div class="inner">
-				<div class="review_list_area">
-					<ul class="review_list">
+			<div class="support">
+				<div class="inner type1">
+					<ul class="support_list">
 						<li>
-							<picture>
-								<source media="(max-width: 1200px)" srcset="images/img_review1_mo.jpg" />
-								<img src="images/img_review1_PC.jpg" />
-							</picture>
-							<div class="review_cont">
-								<h3>캠페인 후기</h3>
-								<p>민지의 씩씩한 한 걸음</p>
-								<a href="" class="btn_more">자세히 보기</a>
-							</div>
+							<a href="">
+								10월 뉴스레터
+							</a>
 						</li>
 						<li>
-							<picture>
-								<source media="(max-width: 1200px)" srcset="images/img_review2_mo.jpg" />
-								<img src="images/img_review2_PC.jpg" />
-							</picture>
-							<div class="review_cont">
-								<h3>결식아동지원</h3>
-								<p>아이의 외로운 하루를 위로할 따뜻한 밥상</p>
-								<a href="" class="btn_more">자세히 보기</a>
-							</div>
+							<a href="">
+								2018 연차보고서 
+							</a>
 						</li>
 						<li>
-							<picture>
-								<source media="(max-width: 1200px)" srcset="images/img_review3_mo.jpg" />
-								<img src="images/img_review3_PC.jpg" />
-							</picture>
-							<div class="review_cont">
-								<h3>캠페인 후기</h3>
-								<p>2019년, 아이들의 위풍당당한 새학기</p>
-								<a href="" class="btn_more">자세히 보기</a>
-							</div>
+							<a href="">
+								2018 사업보고 
+							</a>
 						</li>
 						<li>
-							<picture>
-								<source media="(max-width: 1200px)" srcset="images/img_review4_mo.jpg" />
-								<img src="images/img_review4_PC.jpg" />
-							</picture>
-							<div class="review_cont">
-								<h3>캠페인 후기</h3>
-								<p>따뜻한 우리집 그 안의 시온이</p>
-								<a href="" class="btn_more">자세히 보기</a>
-							</div>
-						</li>
-						<li>
-							<picture>
-								<source media="(max-width: 1200px)" srcset="images/img_review5_mo.jpg" />
-								<img src="images/img_review5_PC.jpg" />
-							</picture>
-							<div class="review_cont">
-								<h3>캠페인 후기</h3>
-								<p>필리핀 태풍 ‘망쿳’ 긴급구호 결과보고</p>
-								<a href="" class="btn_more">자세히 보기</a>
-							</div>
-						</li>
-						<li>
-							<picture>
-								<source media="(max-width: 1200px)" srcset="images/img_review6_mo.jpg" />
-								<img src="images/img_review6_PC.jpg" />
-							</picture>
-							<div class="review_cont">
-								<h3>캠페인 후기</h3>
-								<p>위풍당당 새학기 캠페인<br/>그 뒷이야기</p>
-								<a href="" class="btn_more">자세히 보기</a>
-							</div>
+							<a href="">
+								2019 희망박스 
+							</a>
 						</li>
 					</ul>
-					<a href="javascript:;" class="btn_review prev"></a>
-					<a href="javascript:;" class="btn_review next"></a>
 				</div>
 			</div>
-		</div>
-		<div class="business">
-			<ul class="business_list">
-				<li>
+			<div class="campaign">
+				<div class="inner">
+					<h3>굿피플 캠페인</h3>
+					<ul class="campaign_list">
+						<li>
+							<a href="">
+								<div class="campaign_img">
+									<img src="images/img_campaign1.jpg" />
+								</div>
+								<div class="campaign_cont">
+									<div class="progress_area">
+										<div class="progress_bar">
+											<p>D-69</p>
+										</div>
+									</div>
+									<div class="campaign_text">
+										<h4>[국내아동지원] 우리 모두 오랑해</h4>
+										<p class="more">자세히 보기</p>
+									</div>
+								</div>
+								<p class="state">진행중</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="campaign_img">
+									<img src="images/img_campaign2.jpg" />
+								</div>
+								<div class="campaign_cont">
+									<div class="progress_area">
+										<div class="progress_bar">
+											<p>D-38</p>
+										</div>
+									</div>
+									<div class="campaign_text">
+										<h4>[국내아동후원] 세상을 바꾸는 기적의 시작 Miracle Action</h4>
+										<p class="more">자세히 보기</p>
+									</div>
+								</div>
+								<p class="state">진행중</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<div class="campaign_img">
+									<img src="images/img_campaign3.jpg" />
+								</div>
+								<div class="campaign_cont">
+									<div class="progress_area">
+										<div class="progress_bar">
+											<p>D-8</p>
+										</div>
+									</div>
+									<div class="campaign_text">
+										<h4>[국내아동지원] 가난과 지적장애의 굴레, 언제쯤 벗어날 수 있을까요?</h4>
+										<p class="more">자세히 보기</p>
+									</div>
+								</div>
+								<p class="state">진행중</p>
+							</a>
+						</li>
+					</ul>
+					<p class="campaign_more">
+						<a href="">
+							더 많은 캠페인 보기
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="news">
+				<ul class="news_list">
+					<li>
+						<a href="">
+							<img src="images/img_news1.jpg" />
+							<div class="news_cont">
+								<p class="news_label">굿피플 소식</p>
+								<h3>네이처랩-굿피플, 여성의 건강과 안전을 위해 업무협약 진행</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/img_news2.jpg" />
+							<div class="news_cont">
+								<p class="news_label">굿피플 소식</p>
+								<h3>굿피플, 한국아동청소년그룹홈협의회와 국내아동사업의 체계적인 지원 네트워크 구축</h3>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/img_news3.jpg" />
+							<div class="news_cont">
+								<p class="news_label">굿피플 소식</p>
+								<h3>굿피플 x 롯데하이마트, 추석맞이 봉사활동 진행</h3>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="campaign_review">
+				<div class="inner">
+					<div class="review_list_area">
+						<ul class="review_list">
+							<li>
+								<picture>
+									<source media="(max-width: 1200px)" srcset="images/img_review1_mo.jpg" />
+									<img src="images/img_review1_PC.jpg" />
+								</picture>
+								<div class="review_cont">
+									<h3>캠페인 후기</h3>
+									<p>민지의 씩씩한 한 걸음</p>
+									<a href="" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<picture>
+									<source media="(max-width: 1200px)" srcset="images/img_review2_mo.jpg" />
+									<img src="images/img_review2_PC.jpg" />
+								</picture>
+								<div class="review_cont">
+									<h3>결식아동지원</h3>
+									<p>아이의 외로운 하루를 위로할 따뜻한 밥상</p>
+									<a href="" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<picture>
+									<source media="(max-width: 1200px)" srcset="images/img_review3_mo.jpg" />
+									<img src="images/img_review3_PC.jpg" />
+								</picture>
+								<div class="review_cont">
+									<h3>캠페인 후기</h3>
+									<p>2019년, 아이들의 위풍당당한 새학기</p>
+									<a href="" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<picture>
+									<source media="(max-width: 1200px)" srcset="images/img_review4_mo.jpg" />
+									<img src="images/img_review4_PC.jpg" />
+								</picture>
+								<div class="review_cont">
+									<h3>캠페인 후기</h3>
+									<p>따뜻한 우리집 그 안의 시온이</p>
+									<a href="" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<picture>
+									<source media="(max-width: 1200px)" srcset="images/img_review5_mo.jpg" />
+									<img src="images/img_review5_PC.jpg" />
+								</picture>
+								<div class="review_cont">
+									<h3>캠페인 후기</h3>
+									<p>필리핀 태풍 ‘망쿳’ 긴급구호 결과보고</p>
+									<a href="" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+							<li>
+								<picture>
+									<source media="(max-width: 1200px)" srcset="images/img_review6_mo.jpg" />
+									<img src="images/img_review6_PC.jpg" />
+								</picture>
+								<div class="review_cont">
+									<h3>캠페인 후기</h3>
+									<p>위풍당당 새학기 캠페인<br/>그 뒷이야기</p>
+									<a href="" class="btn_more">자세히 보기</a>
+								</div>
+							</li>
+						</ul>
+						<a href="javascript:;" class="btn_review prev"></a>
+						<a href="javascript:;" class="btn_review next"></a>
+					</div>
+				</div>
+			</div>
+			<div class="business">
+				<ul class="business_list">
+					<li>
+						<a href="">
+							<div class="business_img">
+								<img src="images/img_business1.jpg" />
+							</div>
+							<div class="business_cont">
+								<h4>[희망TV SBS 후기] 1년만에 전하는 남보라와 데보라의 희망 이야기</h4>
+							</div>
+							<p class="business_label global">해외사업</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="business_img">
+								<img src="images/img_business2.jpg" />
+							</div>
+							<div class="business_cont">
+								<h4>‘어둠 속의 대화’를 통해 공감과 이해를 배우다 &lt; 굿피플의 너나들이 프로젝트 &gt;</h4>
+							</div>
+							<p class="business_label internal">국내사업</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sponsor_info">
+				<ul class="info_list">
+					<li class="ars">
+						<h3>ARS 후원</h3>
+						<a href="tel:0607001544" class="num">060-700-1544</a>
+						<span>(건당 10,000원)</span>
+						<p>여러분의 후원으로 우리가 사는 세상이 변합니다.</p>
+					</li>
+					<li class="inq">
+						<h3>후원문의</h3>
+						<a href="tel:027832291" class="num">02-783-2291</a>
+						<p>후원계좌</p>
+						<strong>1005-203-619534 (사)굿피플인터내셔널</strong>
+					</li>
+				</ul>
+				<div class="spon_list">
+					<h3>후원하기</h3>
 					<a href="">
-						<div class="business_img">
-							<img src="images/img_business1.jpg" />
-						</div>
-						<div class="business_cont">
-							<h4>[희망TV SBS 후기] 1년만에 전하는 남보라와 데보라의 희망 이야기</h4>
-						</div>
-						<p class="business_label global">해외사업</p>
+						해외 아동후원
+						<span>바로가기</span>
 					</a>
-				</li>
-				<li>
 					<a href="">
-						<div class="business_img">
-							<img src="images/img_business2.jpg" />
-						</div>
-						<div class="business_cont">
-							<h4>‘어둠 속의 대화’를 통해 공감과 이해를 배우다 &lt; 굿피플의 너나들이 프로젝트 &gt;</h4>
-						</div>
-						<p class="business_label internal">국내사업</p>
+						국내 아동후원
+						<span>바로가기</span>
 					</a>
-				</li>
-			</ul>
-		</div>
-		<div class="sponsor_info">
-			<ul class="info_list">
-				<li class="ars">
-					<h3>ARS 후원</h3>
-					<a href="tel:0607001544" class="num">060-700-1544</a>
-					<span>(건당 10,000원)</span>
-					<p>여러분의 후원으로 우리가 사는 세상이 변합니다.</p>
-				</li>
-				<li class="inq">
-					<h3>후원문의</h3>
-					<a href="tel:027832291" class="num">02-783-2291</a>
-					<p>후원계좌</p>
-					<strong>1005-203-619534 (사)굿피플인터내셔널</strong>
-				</li>
-			</ul>
-			<div class="spon_list">
-				<h3>후원하기</h3>
-				<a href="">
-					해외 아동후원
-					<span>바로가기</span>
-				</a>
-				<a href="">
-					국내 아동후원
-					<span>바로가기</span>
-				</a>
-				<a href="">
-					정기후원
-					<span>바로가기</span>
-				</a>
-				<a href="">
-					일시후원
-					<span>바로가기</span>
-				</a>
+					<a href="">
+						정기후원
+						<span>바로가기</span>
+					</a>
+					<a href="">
+						일시후원
+						<span>바로가기</span>
+					</a>
+				</div>
+			</div>
+			<div class="sns_issue">
+				<ul class="issue_list">
+					<li class="facebook">
+						<a href="">
+							<div class="list_cont">
+								<div class="auto_height">
+									<h4>GPinternational</h4>
+								</div>
+								<div class="cont_scroll">
+									<p>기다렸다 #부산_의 굿피플! 부산을 향해 달려가는 굿피플의 부산지부를 소개합니다"한번도 만난 적은 없지만, 후원자님이 어젯밤 제 꿈에 나왔어요!" 후원자님과 아이들을 연결하는 소중한 다리! 바로 봉사단원입니다❤️ 르완다의 봉사단원이 후원자님께 진심을 담아 쓴 편지를 소개합니다</p>
+								</div>
+								<span class="btn_more">더 보기</span>
+							</div>
+						</a>
+					</li>
+					<li class="instagram">
+						<a href="">
+							instagram 더 보기
+							<div class="hover_bg"></div>
+						</a>
+					</li>
+					<li class="blog">
+						<a href="">
+							<div class="list_cont">
+								<div class="auto_height">
+									<h4>GPinternational</h4>
+								</div>
+								<div class="cont_scroll">
+									<p>[채용공고] 굿피플인터내셔널 말라위 사업장 PM 모집(~11/3)<br/>굿피플은 가난과 질병, 재난 등의 극심한 생존 위험에 노출되어 있는 지구촌 소외 이웃들의 현실을 알리고,국경을 초월한 체계적이고 전문적인 도움의 손길을 전하기 위해 설립된 NGO 단체입니다.이를 위해 문명과 정부기관의 보호로부터 소외된 지역을 중심으로 아동보호, 교육, 질병예방 및 치료, 긴급구호, 지역개발 등 다양한 사업을 수행하고 있습니다.국제 개발협력 사업에 꿈과 열정이 있는 분들의 많은 지원 바랍니다.■ 지원자격- 만 20세 이상으로 국제개발사업과 NGO활동에 관심과 이해가 있는 자- 해외여행에 결격사유가 없는 자- 출국 전 국내교육에 참석 가능한 자- 적극적인 성격으로 대인관계 및 의사소통이 원만한 자- 남자의 경.......</p>
+								</div>
+								<span class="btn_more">더 보기</span>
+							</div>
+						</a>
+					</li>
+					<li class="youtube">
+						<a href="">youtube 재생</a>
+					</li>
+				</ul>
+				<ul class="issue_icon_list">
+					<li>
+						<a href="">
+							<img src="images/btn_facebook_sm.jpg" alt="facebook" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/btn_insta_sm.jpg" alt="instagram" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/btn_blog_sm.jpg" alt="blog" />
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/btn_youtube_sm.jpg" alt="youtube" />
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="sns_issue">
-			<ul class="issue_list">
-				<li class="facebook">
-					<a href="">
-						<div class="list_cont">
-							<div class="auto_height">
-								<h4>GPinternational</h4>
-							</div>
-							<div class="cont_scroll">
-								<p>기다렸다 #부산_의 굿피플! 부산을 향해 달려가는 굿피플의 부산지부를 소개합니다"한번도 만난 적은 없지만, 후원자님이 어젯밤 제 꿈에 나왔어요!" 후원자님과 아이들을 연결하는 소중한 다리! 바로 봉사단원입니다❤️ 르완다의 봉사단원이 후원자님께 진심을 담아 쓴 편지를 소개합니다</p>
-							</div>
-							<span class="btn_more">더 보기</span>
-						</div>
-					</a>
-				</li>
-				<li class="instagram">
-					<a href="">
-						instagram 더 보기
-						<div class="hover_bg"></div>
-					</a>
-				</li>
-				<li class="blog">
-					<a href="">
-						<div class="list_cont">
-							<div class="auto_height">
-								<h4>GPinternational</h4>
-							</div>
-							<div class="cont_scroll">
-								<p>[채용공고] 굿피플인터내셔널 말라위 사업장 PM 모집(~11/3)<br/>굿피플은 가난과 질병, 재난 등의 극심한 생존 위험에 노출되어 있는 지구촌 소외 이웃들의 현실을 알리고,국경을 초월한 체계적이고 전문적인 도움의 손길을 전하기 위해 설립된 NGO 단체입니다.이를 위해 문명과 정부기관의 보호로부터 소외된 지역을 중심으로 아동보호, 교육, 질병예방 및 치료, 긴급구호, 지역개발 등 다양한 사업을 수행하고 있습니다.국제 개발협력 사업에 꿈과 열정이 있는 분들의 많은 지원 바랍니다.■ 지원자격- 만 20세 이상으로 국제개발사업과 NGO활동에 관심과 이해가 있는 자- 해외여행에 결격사유가 없는 자- 출국 전 국내교육에 참석 가능한 자- 적극적인 성격으로 대인관계 및 의사소통이 원만한 자- 남자의 경.......</p>
-							</div>
-							<span class="btn_more">더 보기</span>
-						</div>
-					</a>
-				</li>
-				<li class="youtube">
-					<a href="">youtube 재생</a>
-				</li>
-			</ul>
-			<ul class="issue_icon_list">
-				<li>
-					<a href="">
-						<img src="images/btn_facebook_sm.jpg" alt="facebook" />
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/btn_insta_sm.jpg" alt="instagram" />
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/btn_blog_sm.jpg" alt="blog" />
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="images/btn_youtube_sm.jpg" alt="youtube" />
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
 	</main>
 	<!-- 메인 스크립트 -->
 	<script>
-	// 최상단 슬라이드
-	const mainSlide = document.querySelector('ul.main_slide');
-	const slidePage = mainSlide.querySelectorAll('.slide_page');
-	const slideLen = slidePage.length; // li 길이
-	const slidePageWidth = 100 / (slideLen + 2); // li 너비 계산
-	const btnSlide = document.querySelectorAll('.btn_slide');
-	let curIndex = 0;
-	let curBtn = btnSlide[curIndex]; // 활성화 버튼 선언
-	curBtn.classList.add('active');
-	let curSlide = slidePage[curIndex]; // 활성화 슬라이드내부 선언
-	curSlide.classList.add('active');
-
-	mainSlide.style.width = `${100 * (slideLen + 2)}%`; // ul 너비 지정
-	mainSlide.style.transform = `translateX(-${100 / (slideLen + 2)}%`; // ul 초기위치 지정
-	slidePage.forEach((element) => {
-		element.style.width = `${slidePageWidth}%`;
-	}); // li 너비 지정
-
-	// 슬라이드 양 끝에 슬라이드 복제하기
-	const slidePageFirst = mainSlide.firstElementChild.cloneNode(true);
-	const slidePageLast = mainSlide.lastElementChild.cloneNode(true);
-	mainSlide.appendChild(slidePageFirst);
-	mainSlide.insertBefore(slidePageLast, mainSlide.firstElementChild);
-
-	mainSlide.lastElementChild.classList.remove('active'); // 복제된 슬라이드로부터 따라온 active 제거
-
-	// 페이지 로드되면 자동재생
-	let setting; // clear를 위한 전역함수 선언
-
-	function autoPlay() {
-		setting = setInterval(() => {
-			mainSlide.style.transition = '.5s';
-			mainSlide.style.transform = `translateX(-${slidePageWidth * (curIndex + 2)}%`;
-			
-			curBtn.classList.remove('active'); // 지나간 슬라이드
-			curSlide.classList.remove('active'); // 지나간 슬라이드
-
-			++curIndex;
-
-			curBtn = btnSlide[curIndex];
-			curSlide = slidePage[curIndex];				
-
-			if(curIndex === slideLen) {
-				setTimeout(() => {
-					mainSlide.style.transition = '0s';
-					mainSlide.style.transform = `translateX(-${slidePageWidth}%`;
-				},501);
-				curIndex = 0;
-				curBtn = btnSlide[0];
-				curSlide = slidePage[0];
-			};
-
-			curBtn.classList.add('active');
-			curSlide.classList.add('active');
-		}, 5000);
-	};
-
-	document.addEventListener("DOMContentLoaded", () => {
-		autoPlay();
-	});
-
-	// 버튼 클릭시 슬라이드 이동
-	for (let i = 0; i < slideLen; i++) {
-		btnSlide[i].onclick = () => {
-			mainSlide.style.transition = '.5s';
-			mainSlide.style.transform = `translateX(-${slidePageWidth * (i + 1)}%`; // 클릭한 슬라이드로 이동
-
-			clearInterval(setting); // 자동재생 중지
-
-			curBtn.classList.remove('active'); // 자동재생되던 active 제거
-			curSlide.classList.remove('active'); // 자동재생되던 active 제거
-			btnSlide[i].classList.add('active'); // 클릭한 곳 active 추가
-			slidePage[i].classList.add('active'); // 클릭한 곳 active 추가
-
-			curIndex = i; // 흐름이 이어지도록 curIndex 설정	
-
-			setTimeout(() => {
-				btnSlide[i].classList.remove('active'); 
-				slidePage[i].classList.remove('active');
-			}, 5000); // 5초 뒤 클릭한 곳 active 제거
-			
-			autoPlay(); // 자동재생 다시 실행
-		}
-	}
-
-	// 자동재생 재시작을 위한 선언
-	let rePlaySet; // clear를 위한 전역함수 선언
-
-	function rePlay() {
-		rePlaySet = setTimeout(function() {
-			autoPlay(); 
-		}, 3000);
-	};
-
-	// 다음 페이지로 이동
-	function nextPage() {
-		mainSlide.style.transition = '.5s';
-		mainSlide.style.transform = `translateX(-${slidePageWidth * (curIndex + 2)}%`;
-
-		curBtn.classList.remove('active'); // 지나간 슬라이드
-		curSlide.classList.remove('active'); // 지나간 슬라이드
-
-		++curIndex;
-
-		curBtn = btnSlide[curIndex];
-		curSlide = slidePage[curIndex];			
-
-		if (curIndex === slideLen) {
-			setTimeout(() => {
-				mainSlide.style.transition = '0s';
-				mainSlide.style.transform = `translateX(-${slidePageWidth}%`;
-			},501);
-			curIndex = 0;
-			curBtn = btnSlide[0];
-			curSlide = slidePage[0];
-		};
-
-		curBtn.classList.add('active');
-		curSlide.classList.add('active');
-	};
-
-	// 다음버튼 클릭
-	const btnPageNext = document.querySelector('.btn_page.next');
-	let click = true;
-
-	btnPageNext.addEventListener('click', () => {
-		if (click) {
-			clearInterval(setting); // 자동재생 중지
-			clearTimeout(rePlaySet); // 자동재생 재시작 중지
-			
-			nextPage();
-
-			setTimeout(() => {
-				// 2초 딜레이 (재시작과 중지가 동시에 일어나 무산되지 않도록)
-			}, 2000);
-
-			rePlay(); // 2초 뒤 자동재생 재시작
-
-			click = !click;
-
-			// transition(.5s) 완료 후 클릭이 또 가능하도록
-			setTimeout(() => {
-				click = true;
-			}, 500)
-		}
-	});
-
-	// 이전 페이지로 이동
-	function prevPage() {
-		mainSlide.style.transition = '.5s';
-		mainSlide.style.transform = `translateX(-${slidePageWidth * curIndex}%`;
-
-		for (let i = 0; i < slideLen; i++) {
-			btnSlide[i].classList.remove('active');
-			slidePage[i].classList.remove('active');
-		}; // active 전체 제거
-
-		--curIndex;
-
-		curBtn = btnSlide[curIndex];
-		curSlide = slidePage[curIndex];
-
-		if(curIndex === -1) {
-			setTimeout(() => {
-				mainSlide.style.transition = '0s';
-				mainSlide.style.transform = `translateX(-${slidePageWidth * slideLen}%`;
-			}, 501);
-			curIndex = slideLen - 1;
-			curBtn = btnSlide[slideLen - 1];
-			curSlide = slidePage[slideLen - 1];
-		};
-
-		curBtn.classList.add('active');
-		curSlide.classList.add('active');
-	};
-
-	// 이전버튼 클릭
-	const btnPagePrev = document.querySelector('.btn_page.prev');
-
-	btnPagePrev.addEventListener('click', () => {
-		if (click) {
-			clearInterval(setting); // 자동재생 중지
-			clearTimeout(rePlaySet); // 자동재생 재시작 중지
-			
-			prevPage();
-
-			setTimeout(() => {
-				// 2초 딜레이 (재시작과 중지가 동시에 일어나 무산되지 않도록)
-			}, 2000);
-
-			rePlay(); // 2초 뒤 자동재생 재시작
-
-			click = !click;
-
-			// transition(.5s) 완료 후 클릭이 또 가능하도록
-			setTimeout(() => {
-				click = true;
-			},500)
-		}
-	});
-
-	// 굿피플 캠페인
-	const progressBar = document.querySelectorAll('.progress_bar');
-
-	window.addEventListener('scroll', () => {
-		if (html.scrollTop > 860) {
-			progressBar[0].style.width = '29%';
-			progressBar[1].style.width = '46%';
-			progressBar[2].style.width = '76%';
-		}
-	});
-
-	// 캠페인 후기
-	const reviewList = document.querySelector('ul.review_list');
-	const listPage = reviewList.querySelectorAll('ul.review_list > li');
-	const pageLen = listPage.length; // li 길이
-	const listPageWidth = 100 / (pageLen + 2); // li 너비 계산
-	let curIdx = 0;
-
-	reviewList.style.width = `${100 * (pageLen + 2)}%`; // ul 너비 지정
-	reviewList.style.transform = `translateX(-${listPageWidth}%`; // ul 초기위치 지정
-	listPage.forEach((element) => {
-		element.style.width = `${listPageWidth}%`;
-	}); // li 너비 지정
-
-	// 슬라이드 양 끝에 슬라이드 복제하기
-	const listPageFirst = reviewList.firstElementChild.cloneNode(true);
-	const listPageLast = reviewList.lastElementChild.cloneNode(true);
-	reviewList.appendChild(listPageFirst);
-	reviewList.insertBefore(listPageLast, reviewList.firstElementChild);
-
-	// 다음버튼 클릭
-	const btnReviewNext = document.querySelector('.btn_review.next');
-
-	btnReviewNext.addEventListener('click', () => {
-		reviewList.style.transition = '1s'
-		reviewList.style.transform = `translateX(-${listPageWidth * (curIdx + 2)}%`;
-
-		curIdx++;
-
-		if (curIdx === pageLen) {
-			setTimeout(() => {
-				reviewList.style.transition = '0s';
-				reviewList.style.transform = `translateX(-${listPageWidth}%`;
-			}, 1001);
-			curIdx = 0;
-		};
-	});
-
-	// 이전버튼 클릭
-	const btnReviewPrev = document.querySelector('.btn_review.prev');
-
-	btnReviewPrev.addEventListener('click', () => {
-		reviewList.style.transition = '1s'
-		reviewList.style.transform = `translateX(-${listPageWidth * curIdx}%`;
-
-		curIdx--;
-
-		if (curIdx === -1) {
-			setTimeout(() => {
-				reviewList.style.transition = '0s';
-				reviewList.style.transform = `translateX(-${listPageWidth * pageLen}%`;
-			}, 1001);
-			curIdx = pageLen - 1;
-		};
-	});
+	
 	</script>
 	<!-- 푸터 -->
 	<footer>
@@ -1569,24 +1284,6 @@
 			</div>
 		</div>
 	</footer>
-	<!-- 푸터 스크립트 -->
-	<script>
-	// 사이트맵
-	const sitemap = document.querySelector('.sitemap');
-	const btnSitemap = sitemap.querySelector('.btn_sitemap');
-
-	btnSitemap.addEventListener('click', () => {
-		sitemap.classList.toggle('active');
-	});
-
-	// 패밀리 사이트
-	const familyDropdown = document.querySelector('.family_dropdown');
-	const btnFamily = familyDropdown.querySelector('.btn_family');
-	
-	btnFamily.addEventListener('click', () => {
-		familyDropdown.classList.toggle('active');
-	});
-	</script>
 	<!-- 하단 고정 메뉴 -->
 	<div class="fix_area active">
 		<div class="btn_area">
@@ -1625,15 +1322,7 @@
 			</ul>
 		</div>
 	</div>
-	<!-- 하단 고정 메뉴 스크립트 -->
-	<script>
-	const fixArea = document.querySelector('.fix_area');
-	const btnFix = fixArea.querySelector('.btn_fix');
-
-	btnFix.addEventListener('click', () => {
-		fixArea.classList.toggle('active');
-	});
-	</script>
 </div>
+<script src="js/common.js"></script>
 </body>
 </html>
