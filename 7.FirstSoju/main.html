@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>처음처럼</title>
+<link rel="stylesheet" media="all" href="css/common.css" />
+<style></style>
+<script></script>
+</head>
+<body>
+<div class="wrap">
+	<!-- 헤더 -->
+	<header>
+		<h1 class="logo">
+			<a href="">
+				처음처럼
+			</a>
+		</h1>
+		<nav>
+			<ul class="gnb">
+				<li class="active">
+					<a href="javascript:scrollFact();">
+						처음처럼 FACT CHECK
+					</a>
+				</li>
+				<li>
+					<a href="javascript:scrollStory();">
+						처음처럼 STORY
+					</a>
+				</li>
+				<li>
+					<a href="javascript:scrollPeople();">
+						처음처럼 & PEOPLE
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- 헤더 스크립트 -->
+	<script>
+	const html = document.querySelector('html');
+	const btnGnb = document.querySelectorAll('.gnb > li > a');
+	
+	btnGnb.forEach((element) => {
+		element.addEventListener('click', () => {
+			for (let i = 0; i < btnGnb.length; i++) { // active 전체제거
+				btnGnb[i].parentNode.classList.remove('active');
+			}
+			element.parentNode.classList.add('active'); // 클릭한 곳 active 추가
+		})
+	})
+
+	window.addEventListener('scroll', () => {
+		if( html.scrollTop < 6577 ) {
+			for (let i = 0; i < btnGnb.length; i++) { // active 전체제거
+				btnGnb[i].parentNode.classList.remove('active');
+			}
+			btnGnb[0].parentNode.classList.add('active');
+		} else if ( html.scrollTop < 10888 ) {
+			for (let i = 0; i < btnGnb.length; i++) { // active 전체제거
+				btnGnb[i].parentNode.classList.remove('active');
+			}
+			btnGnb[1].parentNode.classList.add('active');
+		} else {
+			for (let i = 0; i < btnGnb.length; i++) { // active 전체제거
+				btnGnb[i].parentNode.classList.remove('active');
+			}
+			btnGnb[2].parentNode.classList.add('active');
+		}
+	})
+
+	function scrollFact() {
+		window.scroll({
+			behavior: 'smooth',
+			top: 0
+		})
+	}
+
+	function scrollStory() {
+		window.scroll({
+			behavior: 'smooth',
+			top: 6577
+		})
+	}
+
+	function scrollPeople() {
+		window.scroll({
+			behavior: 'smooth',
+			top: 11110
+		})
+	}
+	</script>
+	<!-- 메인 -->
+	<main>
+		<div class="fact_check">
+			<div class="inner">
+				<div class="fact1">
+					<div class="main_area">
+						<h2>
+							<img src="images/factcheck.png" alt="factcheck">
+						</h2>
+						<div class="cont_txt">
+							<img src="images/fact1_txt1.png" alt="FACT1">
+							<img src="images/fact1_txt2.png" alt="처음처럼은">
+							<img src="images/fact1_txt3.png" alt="대한민국 소주입니다.">
+						</div>
+						<div class="cont_img">
+							<img src="images/local1.png" alt="강릉">
+							<img src="images/local2.png" alt="청주">
+							<img src="images/local3.png" alt="군산">
+							<img src="images/soju.png" alt="처음처럼" class="soju">
+						</div>
+					</div>
+					<div class="fact1_1">
+						<img src="images/fact1_100.png" alt="100%">
+						<p class="sub_title">‘처음처럼’이 국내에서 생산되는 비율</p>
+						<ul>
+							<li>
+								<img src="images/fact1_82.png" alt="82">
+								<p>롯데주류 국내 사업장 수</p>
+							</li>
+							<li>
+								<img src="images/fact1_61605.png" alt="61,605">
+								<p>롯데주류 국내 거래처 수</p>
+							</li>
+						</ul>
+						<div class="cont_box">
+							<p><b>처음처럼</b>은 롯데주류의 <b>강릉, 청주, 군산 3개 공장에서 전량 제조·생산</b>되며, 전국 21개 직매장과 52개 영업지점,<br>6만개 이상 거래처에서 활발히 유통·판매되고 있습니다.</p>
+						</div>
+						<p class="date">*2018.12 기준</p>
+					</div>
+					<div class="fact1_2">
+						<h3>롯데칠성음료 지분구조</h3>
+						<div class="cont_img">
+							<div class="col left">
+								<p class="title">기타주주</p>
+								<img src="images/fact1_4704.png" alt="47.04%">
+								<p>
+									국민연금공단<br>해외투자자 및<br>일반투자자
+								</p>
+							</div>
+							<div class="col right">
+								<p>
+									롯데지주㈜<br>롯데알미늄㈜<br>(재)롯데장학재단<br>㈜호텔롯데<br>㈜롯데홀딩스
+								</p>
+								<p class="title">특수관계인</p>
+								<img src="images/fact1_5296.png" alt="52.96%">
+							</div>
+						</div>
+						<div class="cont_box">
+							<p><b>처음처럼</b>을 제조하는 롯데주류가 속한 롯데칠성음료㈜는 1975년 국내 증시에 상장한 <b>대한민국 기업</b>으로 수입맥주<br>판매 법인인 ‘롯데아사히주류’는 별도의 법인입니다.</p>
+						</div>
+						<p class="date">*2019년 2/4분기 DART 공시, 단일 보통주 기준</p>
+					</div>
+				</div>
+				<div class="fact2">
+					<div class="main_area">
+						<div class="cont_txt">
+							<img src="images/fact2_txt1.png" alt="FACT2">
+							<img src="images/fact2_txt2.png" alt="처음처럼은">
+							<img src="images/fact2_txt3.png" alt="대한민국 경제에">
+							<img src="images/fact2_txt4.png" alt="기여합니다.">
+						</div>
+						<div class="cont_txt_right">
+							<img src="images/fact2_14011.png" alt="14,011">
+							<p class="sub_title">
+								'처음처럼'이 대한민국에서 창출한 <b>일자리 수</b>
+							</p>
+							<ul>
+								<li>
+									<img src="images/fact2_1801.png" alt="1,801">
+									직접 고용으로 창출된 <b>국내 일자리 수</b>
+								</li>
+								<li>
+									<img src="images/fact2_7220.png" alt="7,220">
+									제조, 유통, 영업 등을 통해 창출된 <b>국내 일자리 수</b>
+								</li>
+								<li>
+									<img src="images/fact2_4990.png" alt="4,990">
+									협력업체를 통해 창출된 <b>국내 일자리 수</b>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="graph_area">
+						<div class="bg_graph"></div>
+						<img src="images/graph.png" alt="롯데주류 임직원수 추이 113%">
+						<div class="cont_txt">
+							<div class="cont_box">
+								<p><b>처음처럼</b>을 만드는 롯데주류는 직·간접고용으로 <b>대한민국<br>일자리를 창출</b>하고, 협력업체 및 거래처와의 상생경영을<br>통해 경제 활성화 노력을 다하고 있습니다.</p>
+							</div>
+							<p class="date">*2018.12 연간 합계 인원 기준</p>
+						</div>
+					</div>
+				</div>
+				<div class="fact3">
+					<div class="main_area">
+						<div class="cont_txt">
+							<img src="images/fact3_txt1.png" alt="FACT3">
+							<img src="images/fact3_txt2.png" alt="처음처럼">
+							<img src="images/fact3_txt3.png" alt="판매 수익은">
+							<img src="images/fact3_txt4.png" alt="국내에 환원됩니다.">
+						</div>
+					</div>
+					<div class="fact3_1">
+						<img src="images/fact3_13000.png" alt="13,000그루">
+						<p class="sub_title">‘처음처럼’ 숲에 심은 나무 수</p>
+						<ul>
+							<li>
+								<img src="images/fact3_848.png" alt="84.8만kg">
+								<p>연간 이산화탄소 흡수량</p>
+							</li>
+							<li>
+								<img src="images/fact3_209.png" alt="209만kg">
+								<p>연간 미세먼지 흡수량</p>
+							</li>
+						</ul>
+					</div>
+					<ul class="fact3_news_area">
+						<li>
+							<img src="images/fact3_news1.png" alt="">
+							<p><b>처음처럼 브랜드 숲 조성</b></p>
+							<span>2018년 4월 ~ 현재</span>
+						</li>
+						<li>
+							<img src="images/fact3_news2.png" alt="">
+							<p><b>지역 사회공헌 활동</b></p>
+							<span>1999년 ~ 현재</span>
+						</li>
+					</ul>
+					<div class="cont_box">
+						<p><b>처음처럼</b>을 만드는 롯데주류는 친환경 CSR, 지역 축제 지원, 복지단체 기부, 장학금 기탁 등 다양한 활동을 통해 <b>기업의 사회적 책임</b>을 다하고 있습니다.</p>
+					</div>
+					<p class="date">*처음처럼 1~3호 숲 합계 기준</p>
+				</div>
+			</div>
+		</div>
+		<div class="story">
+			<div class="inner">
+				<h2>
+					<img src="images/story.png" alt="story">
+				</h2>
+				<div class="video_area">
+					<iframe width="1200" height="600" src="https://www.youtube.com/embed/LgqkyeJM5wM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="story_area">
+				<div class="inner">
+					<img src="images/history_tit.png" alt="처음처럼 탄생 스토리">
+					<p class="cont_txt">
+						<b>'처음처럼'</b>은 강원도 <b>'경월'</b> 소주로 출발, 대한민국 초록색 소주병의 시초 <b>'그린'</b>과 강원도를<br>상징하는 <b>'산'</b>소주를 이은 대한민국 소주 역사의 한 주축을 담당해 온<br><b>'대한민국 소주 브랜드'</b> 입니다.
+					</p>
+				</div>
+			</div>
+			<div class="brand_area">
+				<div class="inner">
+					<img src="images/story_tit.png" alt="처음처럼 브랜드 스토리">
+					<div class="cont_txt">
+						<p class="txt">
+							<span>의 <b>이름</b>은 다시 새날을 시작하자는 용기와</span>
+							희망을 불어넣어 주는 신영복 교수의 시, ‘처음처럼’에서<br>영감을 얻어 언제나 초심을 잃지 않고 힘찬 삶을 살자는<br>의미를 담고 있습니다.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="prize_area">
+				<div class="inner">
+					<img src="images/prize_tit.png" alt="처음처럼 수상">
+					<div class="slide prize_slide_area">
+						<ul class="prize_list">
+							<li class="prize_page">
+								<img src="images/prize_img1.jpg" alt="">
+								<p><b>소비자 고객만족도</b> (NCSI) 소주부문 1위<br>4년, 6년 연속 (16년~19년, 08년~13년)</p>
+							</li>
+							<li class="prize_page">
+								<img src="images/prize_img2.jpg" alt="">
+								<p><b>대한민국 주류대상</b> 소주부문 19년</p>
+							</li>
+							<li class="prize_page">
+								<img src="images/prize_img3.jpg" alt="">
+								<p><b>2018 대한민국 광고대상</b><br>프로모션 부문 대상, 디자인 부문 은상<br>처음처럼 마이라벨 캠페인</p>
+							</li>
+							<li class="prize_page">
+								<img src="images/prize_img4.jpg" alt="">
+								<p><b>인터넷소통 대상∙소셜미디어 대상</b><br>기업부문 대상(처음처럼) 18년</p>
+							</li>
+						</ul>
+						<button class="btn prev prize_prev" type="button">
+							이전 슬라이드
+						</button>
+						<button class="btn next prize_next" type="button">
+							다음 슬라이드
+						</button>
+						<div class="btn_slide_area btn_prize_area">
+							<span class="btn_slide btn_prize"></span>
+							<span class="btn_slide btn_prize"></span>
+							<span class="btn_slide btn_prize"></span>
+							<span class="btn_slide btn_prize"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="certify_area">
+				<div class="inner">
+					<img src="images/certify_tit.png" alt="처음처럼 인증">
+					<div class="slide certify_slide_area">
+						<ul class="certify_list">
+							<li class="certify_page">
+								<img src="images/certify_img1.jpg" alt="">
+								<p><b>청주공장</b>(16년), <b>강릉.군산공장</b>(15년)<br>식품안전인증(FSSC22000) 획득</p>
+							</li>
+							<li class="certify_page">
+								<img src="images/certify_img2.jpg" alt="">
+								<p><b>청주공장</b>(16년), <b>강릉.군산공장</b>(14년)<br>식품위해요소 중점관리 인증(HACCP)</p>
+							</li>
+							<li class="certify_page">
+								<img src="images/certify_img3.jpg" alt="">
+								<p><b>강릉.군산공장</b> 환경경영체제<br>국제표준 인증(ISO14001) 획득 08년</p>
+							</li>
+							<li class="certify_page">
+								<img src="images/certify_img4.jpg" alt="">
+								<p><b>강릉.군산공장</b> 품질경영시스템<br>인증(ISO9001) 획득 06년</p>
+							</li>
+						</ul>
+						<button class="btn prev certify_prev" type="button">
+							이전 슬라이드
+						</button>
+						<button class="btn next certify_next" type="button">
+							다음 슬라이드
+						</button>
+						<div class="btn_slide_area btn_certify_area">
+							<span class="btn_slide btn_certify"></span>
+							<span class="btn_slide btn_certify"></span>
+							<span class="btn_slide btn_certify"></span>
+							<span class="btn_slide btn_certify"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="people">
+			<div class="inner">
+				<h2>
+					<img src="images/people.png" alt="people">
+				</h2>
+				<img src="images/people_tit.png" alt="처음처럼 & 피플">
+				<div class="people_area">
+					<div class="people_list col1">
+						<a href="javascript:OpenCol1();">
+							<img src="images/thumb.png" alt="">
+						</a>
+						<p>[열혈 영업! 윤상씨의 발로 뛰는 VLOG]</p>
+					</div>
+					<div class="people_list col2">
+						<a href="javascript:OpenCol2();">
+							<img src="images/thumb2.jpg" alt="">
+						</a>
+						<p>[영업의 정석! 유꽃비 팀장의 워킹맘 VLOG]</p>
+					</div>
+					<div class="people_list col3">
+						<a href="javascript:OpenCol3();">
+							<img src="images/thumb3.jpg" alt="">
+						</a>
+						<p>[처음처럼 만드니까]</p>
+					</div>
+				</div>
+			</div>
+			<div class="people_popup_area">
+				<div class="bg"></div>
+				<iframe width="1200" height="600" src="https://www.youtube.com/embed/_RUropH9qXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="1200" height="600" src="https://www.youtube.com/embed/eJaUdZApZM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="1200" height="600" src="https://www.youtube.com/embed/stDXrYWjLRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<a href="javascript:closePopup();" class="btn_close" title="팝업 닫기"></a>
+			</div>
+		</div>
+	</main>
+	<!-- 메인 스크립트 -->
+	<script>
+	// 처음처럼 수상
+	const prizeList = document.querySelector('.prize_list');
+	const prizePage = prizeList.querySelectorAll('.prize_page');
+	const prizeLen = prizePage.length;
+	const btnPrize = document.querySelectorAll('.btn_prize');
+	let curIndex = 0;
+	let curPrize = btnPrize[curIndex];
+	curPrize.classList.add('active');
+
+	prizeList.style.transform = `translateX(-${610 * 2}px)` // ul 초기위치 지정
+	prizeList.style.width = `${590 * (prizeLen + 4) + 20 * (prizeLen + 3)}px`; // ul 너비 지정
+
+	// 슬라이드 붙이기
+	const prizePage1 = prizeList.firstElementChild.cloneNode(true);
+	const prizePage2 = prizeList.children[1].cloneNode(true);
+	const prizePage3 = prizeList.children[2].cloneNode(true);
+	const prizePage4 = prizeList.children[3].cloneNode(true);
+
+	prizeList.appendChild(prizePage1);
+	prizeList.appendChild(prizePage2);
+	prizeList.insertBefore(prizePage4, prizeList.firstElementChild);
+	prizeList.insertBefore(prizePage3, prizeList.firstElementChild);
+
+	// 다음 페이지로 이동
+	const btnPrizeNext = document.querySelector('.btn.prize_next');
+
+	btnPrizeNext.addEventListener('click', () => {
+		prizeList.style.transition = '.5s';
+		prizeList.style.transform = `translateX(-${610 * (curIndex + 3)}px)`;
+
+		for (let i = 0; i < prizeLen; i++) {
+			btnPrize[i].classList.remove('active');
+		}; // active 전체 제거
+
+		++curIndex;
+
+		curPrize = btnPrize[curIndex];
+
+		if (curIndex === prizeLen) {
+			setTimeout(() => {
+				prizeList.style.transition = '0s';
+				prizeList.style.transform = `translateX(-${610 * 2}px)`;
+			}, 501);
+			curIndex = 0;
+			curPrize = btnPrize[0];
+		};
+
+		curPrize.classList.add('active');
+	})
+	
+	// 이전 페이지로 이동
+	const btnPrizePrev = document.querySelector('.btn.prize_prev');
+
+	btnPrizePrev.addEventListener('click', () => {
+		prizeList.style.transition = '.5s';
+		prizeList.style.transform = `translateX(-${610 * (curIndex + 1)}px)`;
+
+		for (let i = 0; i < prizeLen; i++) {
+			btnPrize[i].classList.remove('active');
+		}; // active 전체 제거
+
+		--curIndex;
+		
+		if (curIndex === -1) {
+			curPrize = btnPrize[prizeLen - 1];
+			curPrize.classList.add('active');
+		} else if (curIndex === -2) {
+			setTimeout(() => {
+				prizeList.style.transition = '0s';
+				prizeList.style.transform = `translateX(-${610 * 4}px)`;
+			}, 501);
+			curIndex = prizeLen - 2;
+			curPrize = btnPrize[prizeLen - 2];
+			curPrize.classList.add('active');
+		} else {
+			curPrize = btnPrize[curIndex];
+			curPrize.classList.add('active');
+		}
+	})
+
+	// 버튼 클릭시 슬라이드 이동
+	for (let i = 0; i < prizeLen; i++) {
+		btnPrize[i].onclick = () => {
+			prizeList.style.transition = '.5s';
+			prizeList.style.transform = `translateX(-${610 * (i + 2)}px)`; // 클릭한 슬라이드로 이동
+
+			for (let i = 0; i < prizeLen; i++) {
+				btnPrize[i].classList.remove('active');
+			}; // active 전체 제거
+
+			btnPrize[i].classList.add('active'); // 클릭한 곳 active 추가
+			
+			curIndex = i; // 흐름이 이어지도록 curIndex 설정
+		}
+	}
+
+	// 처음처럼 인증
+	const certifyList = document.querySelector('.certify_list');
+	const certifyPage = certifyList.querySelectorAll('.certify_page');
+	const certifyLen = certifyPage.length;
+	const btnCertify = document.querySelectorAll('.btn_certify');
+	let curIdx = 0;
+	let curCertify = btnCertify[curIdx];
+	curCertify.classList.add('active');
+
+	certifyList.style.transform = `translateX(-${610 * 2}px)` // ul 초기위치 지정
+	certifyList.style.width = `${590 * (certifyLen + 4) + 20 * (certifyLen + 3)}px`; // ul 너비 지정
+
+	// 슬라이드 붙이기
+	const certifyPage1 = certifyList.firstElementChild.cloneNode(true);
+	const certifyPage2 = certifyList.children[1].cloneNode(true);
+	const certifyPage3 = certifyList.children[2].cloneNode(true);
+	const certifyPage4 = certifyList.children[3].cloneNode(true);
+
+	certifyList.appendChild(certifyPage1);
+	certifyList.appendChild(certifyPage2);
+	certifyList.insertBefore(certifyPage3, certifyList.firstElementChild);
+	certifyList.insertBefore(certifyPage4, certifyList.firstElementChild);
+
+	// 다음 페이지로 이동
+	const btnCertifyNext = document.querySelector('.btn.certify_next');
+
+	btnCertifyNext.addEventListener('click', () => {
+		certifyList.style.transition = '.5s';
+		certifyList.style.transform = `translateX(-${610 * (curIdx + 3)}px)`;
+
+		for (let i = 0; i < certifyLen; i++) {
+			btnCertify[i].classList.remove('active');
+		}; // active 전체 제거
+
+		++curIdx;
+
+		curCertify = btnCertify[curIdx];
+
+		if (curIdx === certifyLen) {
+			setTimeout(() => {
+				certifyList.style.transition = '0s';
+				certifyList.style.transform = `translateX(-${610 * 2}px)`;
+			}, 501);
+			curIdx = 0;
+			curCertify = btnCertify[0];
+		};
+
+		curCertify.classList.add('active');
+	})
+	
+	// 이전 페이지로 이동
+	const btnCertifyPrev = document.querySelector('.btn.certify_prev');
+
+	btnCertifyPrev.addEventListener('click', () => {
+		certifyList.style.transition = '.5s';
+		certifyList.style.transform = `translateX(-${610 * (curIdx + 1)}px)`;
+
+		for (let i = 0; i < certifyLen; i++) {
+			btnCertify[i].classList.remove('active');
+		}; // active 전체 제거
+
+		--curIdx;
+		
+		if (curIdx === -1) {
+			curCertify = btnCertify[certifyLen - 1];
+			curCertify.classList.add('active');
+		} else if (curIdx === -2) {
+			setTimeout(() => {
+				certifyList.style.transition = '0s';
+				certifyList.style.transform = `translateX(-${610 * 4}px)`;
+			}, 501);
+			curIdx = certifyLen - 2;
+			curCertify = btnCertify[certifyLen - 2];
+			curCertify.classList.add('active');
+		} else {
+			curCertify = btnCertify[curIdx];
+			curCertify.classList.add('active');
+		}
+	})
+
+	// 버튼 클릭시 슬라이드 이동
+	for (let i = 0; i < certifyLen; i++) {
+		btnCertify[i].onclick = () => {
+			certifyList.style.transition = '.5s';
+			certifyList.style.transform = `translateX(-${610 * (i + 2)}px)`; // 클릭한 슬라이드로 이동
+
+			for (let i = 0; i < certifyLen; i++) {
+				btnCertify[i].classList.remove('active');
+			}; // active 전체 제거
+
+			btnCertify[i].classList.add('active'); // 클릭한 곳 active 추가
+			
+			curIdx = i; // 흐름이 이어지도록 curIndex 설정
+		}
+	}
+
+	// 처음처럼 & 피플
+	const peoplePopupArea = document.querySelector('.people_popup_area');
+	const iframes = peoplePopupArea.querySelectorAll('iframe');
+
+	function OpenCol1() {
+		html.style.overflow = 'hidden';
+		peoplePopupArea.style.display = 'block';
+		iframes[0].style.display = 'block';
+	}
+
+	function OpenCol2() {
+		html.style.overflow = 'hidden';
+		peoplePopupArea.style.display = 'block';
+		iframes[1].style.display = 'block';
+	}
+
+	function OpenCol3() {
+		html.style.overflow = 'hidden';
+		peoplePopupArea.style.display = 'block';
+		iframes[2].style.display = 'block';
+	}
+
+	function closePopup() {
+		html.style.overflow = 'auto';
+		peoplePopupArea.style.display = 'none';
+	}
+	</script>
+	<!-- 애니메이션 스크립트 -->
+	<script>
+	const fact1 = document.querySelector('.fact1');
+	const fact1MainArea = fact1.querySelector('.main_area');
+	const fact1MainAreaTxt = fact1MainArea.querySelectorAll('.cont_txt > img');
+	const fact1MainAreaImg = fact1MainArea.querySelectorAll('.cont_img > img');
+	const fact1_1 = fact1.querySelector('.fact1_1');
+	const fact1_2 = fact1.querySelector('.fact1_2');
+	const fact2 = document.querySelector('.fact2');
+	const fact2MainArea = fact2.querySelector('.main_area');
+	const fact2MainAreaTxt = fact2MainArea.querySelectorAll('.cont_txt > img');
+	const fact2MainAreaRight = fact2MainArea.querySelector('.cont_txt_right');
+	const fact2GraphBg = fact2.querySelector('.bg_graph');
+	const fact3 = document.querySelector('.fact3');
+	const fact3MainAreaTxt = fact3.querySelectorAll('.cont_txt > img');
+	const fact3_1 = fact3.querySelector('.fact3_1');
+	const fact3NewsList = fact3.querySelectorAll('.fact3_news_area > li');
+
+	const story = document.querySelector('.story');
+	const storyVideo = story.querySelector('.video_area');
+	const storyTxt = story.querySelector('.inner > img');
+	const storyContTxt = story.querySelector('.cont_txt');
+	const brandTxt = story.querySelector('.brand_area > .inner > img');
+	const brandContTxt = story.querySelector('.brand_area .cont_txt');
+	const prizeTxt = story.querySelector('.prize_area > .inner > img');
+	const prizeSlide = story.querySelector('.prize_slide_area');
+	const certifyTxt = story.querySelector('.certify_area > .inner > img');
+	const certifySlide = story.querySelector('.certify_slide_area');
+
+	const people = document.querySelector('.people');
+	const peopleTxt = people.querySelector('.inner > img');
+	const peopleCol1 = people.querySelector('.col1');
+	const peopleCol2 = people.querySelector('.col2');
+	const peopleCol3 = people.querySelector('.col3');
+
+	// 로드 시 애니메이션
+	window.addEventListener('load', () => {
+		fact1MainAreaTxt[0].style.transition = '.5s ease';
+		fact1MainAreaTxt[0].style.transform = 'translateX(0)';
+		fact1MainAreaTxt[1].style.transition = '.5s ease .4s';
+		fact1MainAreaTxt[1].style.transform = 'translateX(0)';
+		fact1MainAreaTxt[2].style.transition = '.5s ease .8s';
+		fact1MainAreaTxt[2].style.transform = 'translateX(0)';
+
+		fact1MainAreaImg[2].style.transition = '.2s ease 2s';
+		fact1MainAreaImg[2].style.opacity = '1';
+		fact1MainAreaImg[1].style.transition = '.2s ease 2.3s';
+		fact1MainAreaImg[1].style.opacity = '1';
+		fact1MainAreaImg[0].style.transition = '.2s ease 2.6s';
+		fact1MainAreaImg[0].style.opacity = '1';
+		fact1MainAreaImg[3].style.transition = '1s cubic-bezier(0.38, 0.9, 0.7, 1.1) 3s';
+		fact1MainAreaImg[3].style.opacity = '1';
+		fact1MainAreaImg[3].style.transform = 'translateX(0)';
+	})
+
+	// 스크롤 애니메이션
+	window.addEventListener('scroll', () => {
+		let scrollValue = html.scrollTop;
+
+		// FACT CHECK
+		if ( scrollValue > 350 ) {
+			fact1_1.style.transform = 'translateY(0)';
+			fact1_1.style.opacity = '1';
+		} else {
+			fact1_1.style.transform = 'translateY(100px)';
+			fact1_1.style.opacity = '0';
+		}
+
+		if ( scrollValue > 1228 ) {
+			fact1_2.style.transition = '.7s ease';
+			fact1_2.style.transform = 'translateY(0)';
+			fact1_2.style.opacity = '1';
+		} else {
+			fact1_2.style.transform = 'translateY(100px)';
+			fact1_2.style.opacity = '0';
+		}
+
+		if ( scrollValue > 1764 ) {
+			fact1_2.querySelector('.col.left').style.transform = 'translateX(0)';
+			fact1_2.querySelector('.col.left').style.opacity = '1';
+			fact1_2.querySelector('.col.right').style.transform = 'translateX(0)';
+			fact1_2.querySelector('.col.right').style.opacity = '1';
+		} else {
+			fact1_2.querySelector('.col.left').style.transform = 'translateX(-100px)';
+			fact1_2.querySelector('.col.left').style.opacity = '0';
+			fact1_2.querySelector('.col.right').style.transform = 'translateX(100px)';
+			fact1_2.querySelector('.col.right').style.opacity = '0';
+		}
+
+		if ( scrollValue > 2548 ) {
+			fact2MainAreaTxt[0].style.transform = 'translateX(0)';
+			fact2MainAreaTxt[1].style.transform = 'translateX(0)';
+			fact2MainAreaTxt[2].style.transform = 'translateX(0)';
+			fact2MainAreaTxt[3].style.transform = 'translateX(0)';
+			fact2MainAreaRight.style.transform = 'translateY(0)';
+		 	fact2MainAreaRight.style.opacity = '1';
+		} else if ( scrollValue < 2216 ) {
+			fact2MainAreaTxt[0].style.transform = 'translateX(-999px)';
+			fact2MainAreaTxt[1].style.transform = 'translateX(-999px)';
+			fact2MainAreaTxt[2].style.transform = 'translateX(-999px)';
+			fact2MainAreaTxt[3].style.transform = 'translateX(-999px)';
+			fact2MainAreaRight.style.transform = 'translateY(100px)';
+			fact2MainAreaRight.style.opacity = '0';
+		}
+		if ( scrollValue > 3548 ) {
+			fact2GraphBg.style.width = '100%';
+		} else if ( scrollValue < 3184 ) {
+			fact2GraphBg.style.width = '0';
+		}
+
+		if ( scrollValue > 4192 ) {
+			fact3MainAreaTxt[0].style.transform = 'translateX(0)';
+			fact3MainAreaTxt[1].style.transform = 'translateX(0)';
+			fact3MainAreaTxt[2].style.transform = 'translateX(0)';
+			fact3MainAreaTxt[3].style.transform = 'translateX(0)';
+		} else if ( scrollValue < 3820 ) {
+			fact3MainAreaTxt[0].style.transform = 'translateX(-999px)';
+			fact3MainAreaTxt[1].style.transform = 'translateX(-999px)';
+			fact3MainAreaTxt[2].style.transform = 'translateX(-999px)';
+			fact3MainAreaTxt[3].style.transform = 'translateX(-999px)';
+		}
+
+		if ( scrollValue > 4504 ) {
+			fact3_1.style.transform = 'translateY(0)';
+			fact3_1.style.opacity = '1';
+		} else {
+			fact3_1.style.transform = 'translateY(100px)';
+			fact3_1.style.opacity = '0';
+		}
+
+		if ( scrollValue > 5052 ) {
+			fact3NewsList[0].style.transform = 'translateY(0)';
+			fact3NewsList[0].style.opacity = '1';
+			fact3NewsList[1].style.transform = 'translateY(0)';
+			fact3NewsList[1].style.opacity = '1';
+		} else {
+			fact3NewsList[0].style.transform = 'translateY(100px)';
+			fact3NewsList[0].style.opacity = '0';
+			fact3NewsList[1].style.transform = 'translateY(100px)';
+			fact3NewsList[1].style.opacity = '0';
+		}
+
+		// STORY
+		if ( scrollValue > 6100 ) {
+			storyVideo.style.transform = 'translateY(0)';
+			storyVideo.style.opacity = '1';
+		} else {
+			storyVideo.style.transform = 'translateY(100px)';
+			storyVideo.style.opacity = '0';
+		}
+
+		if ( scrollValue > 6858 ) {
+			storyTxt.style.transform = 'translateX(0)';
+			storyTxt.style.opacity = '1';
+		} else {
+			storyTxt.style.transform = 'translateX(100px)';
+			storyTxt.style.opacity = '0';
+		}
+		if ( scrollValue > 7014 ) {
+			storyContTxt.style.transform = 'translateY(0)';
+			storyContTxt.style.opacity = '1';
+		} else {
+			storyContTxt.style.transform = 'translateY(100px)';
+			storyContTxt.style.opacity = '0';
+		}
+
+		if ( scrollValue > 7912 ) {
+			brandTxt.style.transform = 'translateX(0)';
+			brandTxt.style.opacity = '1';
+		} else {
+			brandTxt.style.transform = 'translateX(100px)';
+			brandTxt.style.opacity = '0';
+		}
+		if ( scrollValue > 8096 ) {
+			brandContTxt.style.transform = 'translateY(0)';
+			brandContTxt.style.opacity = '1';
+		} else {
+			brandContTxt.style.transform = 'translateY(100px)';
+			brandContTxt.style.opacity = '0';
+		}
+
+		if ( scrollValue > 8820 ) {
+			prizeTxt.style.transform = 'translateX(0)';
+			prizeTxt.style.opacity = '1';
+		} else {
+			prizeTxt.style.transform = 'translateX(100px)';
+			prizeTxt.style.opacity = '0';
+		}
+		if ( scrollValue > 9036 ) {
+			prizeSlide.style.transform = 'translateY(0)';
+			prizeSlide.style.opacity = '1';
+		} else {
+			prizeSlide.style.transform = 'translateY(100px)';
+			prizeSlide.style.opacity = '0';
+		}
+
+		if ( scrollValue > 9616 ) {
+			certifyTxt.style.transform = 'translateX(0)';
+			certifyTxt.style.opacity = '1';
+		} else {
+			certifyTxt.style.transform = 'translateX(100px)';
+			certifyTxt.style.opacity = '0';
+		}
+		if ( scrollValue > 9828 ) {
+			certifySlide.style.transform = 'translateY(0)';
+			certifySlide.style.opacity = '1';
+		} else {
+			certifySlide.style.transform = 'translateY(100px)';
+			certifySlide.style.opacity = '0';
+		}
+
+		// PEOPLE
+		if ( scrollValue > 10608 ) {
+			peopleTxt.style.transform = 'translateX(0)';
+			peopleTxt.style.opacity = '1';
+		} else {
+			peopleTxt.style.transform = 'translateX(100px)';
+			peopleTxt.style.opacity = '0';
+		}
+		if (scrollValue > 10784 ) {
+			peopleCol1.style.transform = 'translateY(0)';
+			peopleCol1.style.opacity = '1';
+		} else {
+			peopleCol1.style.transform = 'translateY(100px)';
+			peopleCol1.style.opacity = '0';
+		}
+		if (scrollValue > 11548 ) {
+			peopleCol2.style.transform = 'translateY(0)';
+			peopleCol2.style.opacity = '1';
+		} else {
+			peopleCol2.style.transform = 'translateY(100px)';
+			peopleCol2.style.opacity = '0';
+		}
+		if (scrollValue > 12348 ) {
+			peopleCol3.style.transform = 'translateY(0)';
+			peopleCol3.style.opacity = '1';
+		} else {
+			peopleCol3.style.transform = 'translateY(100px)';
+			peopleCol3.style.opacity = '0';
+		}
+	})
+
+	</script>
+	<!-- 푸터 -->
+	<footer>
+		<img src="images/foot_txt.png" alt="처음처럼">
+		<ul class="sns_list">
+			<li>
+				<a href="">
+					<img src="images/ico_fb.png" alt="페이스북 바로가기">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/ico_insta.png" alt="인스타그램 바로가기">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/ico_nb.png" alt="네이버 블로그 바로가기">
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/ico_youtube.png" alt="유튜브 바로가기">
+				</a>
+			</li>
+		</ul>
+		<img src="images/copyright.png" alt="COPYRIGHT(C) BY LOTTE CHILSUNG BEVERAGE CO.,LTD. ALL RIGHTS RESERVED">
+	</footer>
+</div>
+</body>
+</html>
