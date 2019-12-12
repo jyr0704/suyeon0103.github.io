@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사단법인 두루</title>
+<link rel="stylesheet" media="all" href="css/common.css" />
+<style></style>
+<script></script>
+</head>
+<body>
+<div class="wrap">
+	<!-- 헤더 -->
+	<header>
+		<h1 class="logo">
+			<a href="">
+				사단법인 두루
+			</a>
+		</h1>
+		<nav>
+			<ul class="gnb">
+				<li>
+					<a href="">
+						두루 소개
+					</a>
+					<ul class="lnb">
+						<li>
+							<a href="">
+								소개 및 설립취지
+							</a>
+						</li>
+						<li>
+							<a href="">
+								이사장 인사말
+							</a>
+						</li>
+						<li>
+							<a href="">
+								함께하는 사람들
+							</a>
+						</li>
+						<li>
+							<a href="">
+								로고 소개
+							</a>
+						</li>
+						<li>
+							<a href="">
+								오시는 길
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						두루 활동
+					</a>
+					<ul class="lnb">
+						<li>
+							<a href="">
+								장애 인권
+							</a>
+						</li>
+						<li>
+							<a href="">
+								아동ㆍ청소년 인권
+							</a>
+						</li>
+						<li>
+							<a href="">
+								사회적경제
+							</a>
+						</li>
+						<li>
+							<a href="">
+								국제 인권
+							</a>
+						</li>
+						<li>
+							<a href="">
+								공익법 일반
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						두루 소식
+					</a>
+					<ul class="lnb">
+						<li>
+							<a href="">
+								공지사항
+							</a>
+						</li>
+						<li>
+							<a href="">
+								언론보도
+							</a>
+						</li>
+						<li>
+							<a href="">
+								뉴스레터
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						정보 공개
+					</a>
+					<ul class="lnb">
+						<li>
+							<a href="">
+								재정보고
+							</a>
+						</li>
+						<li>
+							<a href="">
+								운영보고
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						기부하기
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="link_area">
+			<a href="" class="btn_contact">CONTACT US</a>
+			<a href="" class="btn_jipyong">법무법인(유) 지평 웹사이트 바로가기</a>
+		</div>
+		<div class="head_btn_area">
+			<button type="button" class="btn_search">통합검색</button>
+			<button type="button" class="btn_list">목록</button>
+			<button type="button" class="btn_close">닫기</button>
+		</div>
+		<div class="search_wrap">
+			<fieldset>
+				<legend>통합검색</legend>
+				<input type="text" placeholder="검색어 입력">
+				<button type="submit" class="btn_search_wrap">검색</button>
+			</fieldset>
+		</div>
+		<div class="site_list_wrap">
+			<ul class="site_list">
+				<li>
+					<a href="">
+						두루 소개
+					</a>
+					<ul class="site_list_depth2">
+						<li>
+							<a href="">
+								소개 및 설립취지
+							</a>
+						</li>
+						<li>
+							<a href="">
+								이사장 인사말
+							</a>
+						</li>
+						<li>
+							<a href="">
+								함께하는 사람들
+							</a>
+						</li>
+						<li>
+							<a href="">
+								로고 소개
+							</a>
+						</li>
+						<li>
+							<a href="">
+								오시는 길
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						두루 활동
+					</a>
+					<ul class="site_list_depth2">
+						<li>
+							<a href="">
+								장애 인권
+							</a>
+						</li>
+						<li>
+							<a href="">
+								아동ㆍ청소년 인권
+							</a>
+						</li>
+						<li>
+							<a href="">
+								사회적경제
+							</a>
+						</li>
+						<li>
+							<a href="">
+								국제 인권
+							</a>
+						</li>
+						<li>
+							<a href="">
+								공익법 일반
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						두루 소식
+					</a>
+					<ul class="site_list_depth2">
+						<li>
+							<a href="">
+								공지사항
+							</a>
+						</li>
+						<li>
+							<a href="">
+								언론보도
+							</a>
+						</li>
+						<li>
+							<a href="">
+								뉴스레터
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						정보 공개
+					</a>
+					<ul class="site_list_depth2">
+						<li>
+							<a href="">
+								재정보고
+							</a>
+						</li>
+						<li>
+							<a href="">
+								운영보고
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="">
+						기부하기
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- 헤더 스크립트 -->
+	<script>
+	// search wrap
+	const btnSearch = document.querySelector('.btn_search');
+	const searchWrap = document.querySelector('.search_wrap');
+	const btnClose = document.querySelector('.btn_close');
+
+	btnSearch.addEventListener('click', () => {
+		searchWrap.style.display = 'block';
+		btnClose.style.display = 'block';
+
+		btnClose.addEventListener('click', () => {
+			searchWrap.style.display = 'none';
+			btnClose.style.display = 'none';
+		})
+	})
+
+	// site list
+	const nav = document.querySelector('nav');
+	const btnList = document.querySelector('.btn_list');
+	const siteListWrap = document.querySelector('.site_list_wrap');
+	const siteListLis = document.querySelectorAll('.site_list > li');
+	const siteListLiA = document.querySelectorAll('.site_list > li > a');
+	
+	btnList.addEventListener('click', () => {
+		nav.classList.add('none');
+		siteListWrap.style.display = 'block';
+		btnClose.style.display = 'block';
+
+		if ( window.innerWidth < 768 ) {
+			for (let i = 0; i < siteListLiA.length - 1; i++) {
+				siteListLiA[i].href = 'javascript:;'
+				siteListLiA[i].onclick = () => {
+					siteListLis[i].classList.toggle('active');
+				}
+			}
+		}
+
+		btnClose.addEventListener('click', () => {
+			nav.classList.remove('none');
+			siteListWrap.style.display = 'none';
+			btnClose.style.display = 'none';
+		})
+	})
+	</script>
+	<!-- 메인 -->
+	<main>
+		<div class="slide_area">
+			<div class="slide_cont">
+				<h2>
+					세상을 두루 살피고<br/>사람을 널리 이롭게
+				</h2>
+				<p>따뜻한 세상을 만드는 법률전문가 공동체</p>
+				<a href="">자세히 보기</a>
+			</div>
+			<ul class="slide_list">
+				<li class="slide_page"></li>
+				<li class="slide_page"></li>
+				<li class="slide_page"></li>
+			</ul>
+			<div class="btn_slide_area">
+				<span class="btn_slide">슬라이드 이미지 1</span>
+				<span class="btn_slide">슬라이드 이미지 2</span>
+				<span class="btn_slide">슬라이드 이미지 3</span>
+			</div>
+			<div class="quick_menu">
+				<ul>
+					<li>
+						<a href="">
+							장애 인권
+						</a>
+					</li>
+					<li>
+						<a href="">
+							아동ㆍ청소년 인권
+						</a>
+					</li>
+					<li>
+						<a href="">
+							사회적경제
+						</a>
+					</li>
+					<li>
+						<a href="">
+							국제 인권
+						</a>
+					</li>
+					<li>
+						<a href="">
+							공익법 일반
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_section acti">
+			<div class="section_head">
+				<h3>
+					<span>
+						<span>두루 활동</span>
+					</span>
+				</h3>
+			</div>
+			<div class="activity">
+				<div class="intro">
+					<span class="intro_num">01</span>
+					<h4>장애 인권</h4>
+					<p>장애인의 권익 옹호를 위한 소송과 법률자문 및 법제도 개선 활동을 통해 장애인과 비장애인이 차별 없이 더불어 살아가는 세상을 만듭니다.</p>
+					<a href="" class="more">MORE</a>
+				</div>
+				<div class="img_area"></div>
+				<div class="recent">
+					<a href="">
+						<span class="date">2019.11.21</span>
+						<p>장애인활동지원사 휴게시간 저축제 도입을 촉구하는 기자회견 참여</p>
+					</a>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="intro">
+					<span class="intro_num">02</span>
+					<h4>아동ㆍ청소년<br/> 인권</h4>
+					<p>아동ㆍ청소년의 권익을 옹호하기 위한 소송, 제도 개선을 위한 입법운동과 연구, 법률교육, 자문과 상담을 수행합니다.</p>
+					<a href="" class="more">MORE</a>
+				</div>
+				<div class="img_area"></div>
+				<div class="recent">
+					<a href="">
+						<span class="date">2019.11.19</span>
+						<p>촛불청소년인권법제정연대 ‘정부가 외면한 유엔의 경고들’ 여론조사</p>
+					</a>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="intro">
+					<span class="intro_num">03</span>
+					<h4>사회적경제</h4>
+					<p>사회적기업, 협동조합 등의 사회적 경제조직을 지원하고, 기업의 사회공헌에 함께 합니다.</p>
+					<a href="" class="more">MORE</a>
+				</div>
+				<div class="img_area"></div>
+				<div class="recent">
+					<a href="">
+						<span class="date">2019.05.20</span>
+						<p>미혼모에 대한 부가가치세 부과 처분 직권 취소 결정</p>
+					</a>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="intro">
+					<span class="intro_num">04</span>
+					<h4>국제 인권</h4>
+					<p>이주민, 난민의 권익을 옹호하고, 국내에서 활동하는 해외 NGO 및 국제기구의 설립 운영을 지원하며, 동남아시아 등 해외에 대한 법률 기타 지원활동을 합니다.</p>
+					<a href="" class="more">MORE</a>
+				</div>
+				<div class="img_area"></div>
+				<div class="recent">
+					<a href="">
+						<span class="date">2019.11.25</span>
+						<p>난민법 개정 심포지엄 발제</p>
+					</a>
+				</div>
+			</div>
+			<div class="activity">
+				<div class="intro">
+					<span class="intro_num">05</span>
+					<h4>공익법 일반</h4>
+					<p>두루는 소수자 및 사회적 약자에 대한 인권침해에 적극적으로 대응합니다.</p>
+					<a href="" class="more">MORE</a>
+				</div>
+				<div class="img_area"></div>
+				<div class="recent">
+					<a href="">
+						<span class="date">2019.09.23</span>
+						<p>일본의 공익 변호사를 만나다</p>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="main_people">
+			<div class="section_head">
+				<h3>
+					<span>
+						<span>함께하는 사람들</span>
+					</span>
+				</h3>
+				<a href="" class="more">MORE</a>
+			</div>
+			<div class="people_area">
+				<div class="people_list_area">
+					<ul class="people_list">
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people1.jpg" alt="이상현 변호사">
+								<span>이상현 변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people2.jpg" alt="엄선희 변호사">
+								<span>엄선희 변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people3.jpg" alt="마한얼 변호사">
+								<span>마한얼 변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people4.jpg" alt="김진 외국변호사">
+								<span>김진 외국변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people5.jpg" alt="강정은 변호사">
+								<span>강정은 변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people6.jpg" alt="김용진 변호사">
+								<span>김용진 변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people7.jpg" alt="이주언 변호사">
+								<span>이주언 변호사</span>
+							</a>
+						</li>
+						<li class="people_info">
+							<a href="">
+								<img src="images/img_people8.jpg" alt="최초록 변호사">
+								<span>최초록 변호사</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="btn_people_prev">이전 목록</button>
+				<button type="button" class="btn_people_next">다음 목록</button>
+			</div>
+		</div>
+		<div class="main_section news">
+			<div class="section_head">
+				<h3>
+					<span>
+						<span>두루 소식</span>
+					</span>
+				</h3>
+				<a href="" class="more">MORE</a>
+			</div>
+			<ul class="news_list">
+				<li>
+					<a href="">
+						<div class="image_area">
+							<img src="images/img_news1.png" alt="">
+						</div>
+						<div class="cont_area">
+							<span class="category">공지사항</span>
+							<strong>두루 2020년 동계 실무수습 안내</strong>
+							<p class="preview">
+								 가. 지원 자격 및 모집 인원 공익인권활동 분야에
+								적극적인 의지가 있는 로스쿨 1~2학년 모집 인원 : 10명 내외(각 분야 별 2~3명) 
+								나. 실무수습 일시 및 장소 2020년 2월 3일(월) ~ 2월 21일(금) 3주간 사단법인 두루 사무실 (서울시 서대문구 충정로 60 KT&G 서대문타워 8층)
+								다. 실무수습 프로그램1) 사단법인 두루 소개2) 공익인권 활동 참여(소송 기록 검토, 소장・의견서 등 서면작성, 리서치, 재판
+								방청 등) 
+								3) 공익인권법 관련 강의4) 공익단체 등 NGO와의 협력 및 교류5) 기타 사회공헌활동
+								※ 구체적인 일정과 프로그램은
+								참가 학생 대상으로 공지할 예정입니다. 라. 제출 서류 및 접수처  지원 접수 : 2019년 10월 21일(월) ~ 11월 3일(일) 접수 : 첨부 지원서 양식으로 이메일 제출 : duroo@jipyong.com
+								※ 파일명 : “학교_지원자 이름” [예: OO대_김OO] ※ .docx 혹은 .pdf 형태로 제출하기 바랍니다. ※ 지원 양식을 꼭
+								지켜주시기 바랍니다. ※ 지원서 이외에
+								성적 증명서 등 증빙서류는 필요하지 않습니다. 
+								 선발 결과 발표 : 2019년 11월 15일(금) 이내 이메일로 선발 여부 개별 통지  문의 : 엄선희 변호사(02-6200-1714, shum@jipyong.com)
+							</p>
+							<span class="date">2019.10.21</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="image_area">
+							<img src="images/img_news2.jpg" alt="">
+						</div>
+						<div class="cont_area">
+							<span class="category">뉴스레터</span>
+							<strong>제5호 기사, 김진 변호사의 기대</strong>
+							<p class="preview">
+								안녕하세요, 두루에서 일하는 김진 입니다. 제가 두루에 합류한지도 벌써 4개월이 지났습니다. 첫 출근한 날인 참 더웠는데 벌써 찬 바람이 불고 낙엽이 지고 있네요. 아침 저녁으로 제법 추운데 건강은 잘 챙기고 계신지요? 두루 회원님들과 기부자님들께서 응원해주시고 늘 따뜻하게 격려해주신 덕에 저는 잘 적응해서 두루의 다른 구성원들과 함께 즐겁게 일하고 있습니다. 
+								인사와 함께 저의 활동을 간단히 소개해볼까 합니다. 
+							</p>
+							<span class="date">2019.11.15</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</main>
+	<!-- 메인 스크립트 -->
+	<script>
+	// 최상단 슬라이드
+	const slideList = document.querySelector('.slide_list');
+	const slidePage = slideList.querySelectorAll('.slide_page');
+	const slideLen = slidePage.length;
+	const slidePageWidth = 100 / (slideLen + 1); // li 너비 계산
+	const btnSlide = document.querySelectorAll('.btn_slide');
+	let curIndex = 0;
+	let curBtn = btnSlide[curIndex];
+	curBtn.classList.add('active');
+
+	slideList.style.width = `${100 * (slideLen + 1)}%`; // ul 너비 지정
+	slidePage.forEach((element) => {
+		element.style.width = `${slidePageWidth}%`;
+	}); // li 너비 지정
+
+	// 마지막 슬라이드 뒤에 첫번째 슬라이드 붙이기
+	const slidePageFirst = slideList.firstElementChild.cloneNode(true);
+	slideList.appendChild(slidePageFirst);
+
+	// 페이지 로드되면 자동재생
+	let setting; // clear를 위한 전역함수 선언
+
+	function autoPlay() {
+		setting = setInterval(() => {
+			slideList.style.transition = '.5s';
+			slideList.style.transform = `translateX(-${slidePageWidth * (curIndex + 1)}%`;
+			
+			curBtn.classList.remove('active');
+
+			curBtn = btnSlide[++curIndex];				
+			
+			if(curIndex === slideLen) {
+				setTimeout(() => {
+					slideList.style.transition = '0s';
+					slideList.style.transform = 'translateX(0)';
+				},501);
+				curIndex = 0;
+				curBtn = btnSlide[0];
+			};
+
+			curBtn.classList.add('active');
+		}, 7000);
+	};
+
+	document.addEventListener("DOMContentLoaded", () => {
+		autoPlay();
+	});
+
+	// 버튼 클릭시 슬라이드 이동
+	for (let i = 0; i < slideLen; i++) {
+		btnSlide[i].onclick = () => {
+			slideList.style.transition = '.5s';
+			slideList.style.transform = `translateX(-${slidePageWidth * i}%`; // 클릭한 슬라이드로 이동
+			
+			clearInterval(setting); // 자동재생 중지
+
+			curBtn.classList.remove('active'); // 자동재생되던 곳 active 제거
+			btnSlide[i].classList.add('active'); // 클릭한 곳 active 추가
+			
+			curIndex = i; // 흐름이 이어지도록 curIndex 설정
+			
+			setTimeout(() => {
+				btnSlide[i].classList.remove('active'); 
+			}, 7000); // 7초 뒤 클릭한 곳 active 제거
+			
+			autoPlay(); // 자동재생 다시 실행
+		}
+	}
+
+	// 함께하는 사람들
+	const peopleList = document.querySelector('.people_list');
+	const peopleInfo = document.querySelectorAll('.people_info');
+	const peopleInfoWidth = 25 / 4;
+	const peopleLen = peopleInfo.length;
+	const btnPeopleNext = document.querySelector('.btn_people_next');
+	const btnPeoplePrev = document.querySelector('.btn_people_prev');
+	let curIdx = 0;
+	let click = true;
+
+	// 슬라이드 붙이기
+	const peopleInfoFirst = peopleList.firstElementChild.cloneNode(true);
+	const peopleInfoFirst2 = peopleList.children[1].cloneNode(true);
+	const peopleInfoFirst3 = peopleList.children[2].cloneNode(true);
+	const peopleInfoFirst4 = peopleList.children[3].cloneNode(true);
+	const peopleInfoLast = peopleList.lastElementChild.cloneNode(true);
+	const peopleInfoLast2 = peopleList.children[6].cloneNode(true);
+	const peopleInfoLast3 = peopleList.children[5].cloneNode(true);
+	const peopleInfoLast4 = peopleList.children[4].cloneNode(true);
+	peopleList.appendChild(peopleInfoFirst);
+	peopleList.appendChild(peopleInfoFirst2);
+	peopleList.appendChild(peopleInfoFirst3);
+	peopleList.appendChild(peopleInfoFirst4);
+	peopleList.insertBefore(peopleInfoLast, peopleList.firstElementChild);
+	peopleList.insertBefore(peopleInfoLast2, peopleList.firstElementChild);
+	peopleList.insertBefore(peopleInfoLast3, peopleList.firstElementChild);
+	peopleList.insertBefore(peopleInfoLast4, peopleList.firstElementChild);
+
+	peopleList.style.transform = `translateX(-${peopleInfoWidth * 4}%` // ul 초기위치 지정
+
+	peopleInfo.forEach((element) => { // li 너비 지정
+		element.style.width = `${peopleInfoWidth}%`;
+	})
+
+	// 붙인 슬라이드 너비 지정
+	peopleInfoFirst.style.width = `${peopleInfoWidth}%`;
+	peopleInfoFirst2.style.width = `${peopleInfoWidth}%`;
+	peopleInfoFirst3.style.width = `${peopleInfoWidth}%`;
+	peopleInfoFirst4.style.width = `${peopleInfoWidth}%`;
+	peopleInfoLast.style.width = `${peopleInfoWidth}%`;
+	peopleInfoLast2.style.width = `${peopleInfoWidth}%`;
+	peopleInfoLast3.style.width = `${peopleInfoWidth}%`;
+	peopleInfoLast4.style.width = `${peopleInfoWidth}%`;
+
+	// 초기실행
+	if ( window.innerWidth < 1280) {
+		peopleList.style.width = `${50 * (peopleLen + 8)}%`; // ul 너비 지정
+	} else {
+		peopleList.style.width = `${25 * (peopleLen + 8)}%`; // ul 너비 지정
+	}
+
+	// window 넓이
+	window.addEventListener('resize', () => {
+		winSize = window.innerWidth;
+
+		if ( winSize < 1280) {
+			peopleList.style.width = `${50 * (peopleLen + 8)}%`; // ul 너비 지정
+		} else {
+			peopleList.style.width = `${25 * (peopleLen + 8)}%`; // ul 너비 지정
+		}
+	})
+
+	// 페이지 로드되면 자동재생
+	let settingPeople; // clear를 위한 전역함수 선언
+
+	function autoPlayPeople() {
+		settingPeople = setInterval(() => {
+			peopleList.style.transition = '.7s';
+			peopleList.style.transform = `translateX(-${peopleInfoWidth * (curIdx + 5)}%`;
+			
+			++curIdx;				
+			
+			if (curIdx === peopleLen) {
+				setTimeout(() => {
+					peopleList.style.transition = '0s';
+					peopleList.style.transform = `translateX(-${peopleInfoWidth * 4}%`;
+				}, 701);
+				curIdx = 0;
+			};
+		}, 5000);
+	};
+
+	document.addEventListener("DOMContentLoaded", () => {
+		autoPlayPeople();
+	});
+
+	// 다음 페이지로 이동
+	function nextPeople() {
+		peopleList.style.transition = '.7s';
+		peopleList.style.transform = `translateX(-${peopleInfoWidth * (curIdx + 5)}%`;
+
+		++curIdx;		
+
+		if (curIdx === peopleLen) {
+			setTimeout(() => {
+				peopleList.style.transition = '0s';
+				peopleList.style.transform = `translateX(-${peopleInfoWidth * 4}%`;
+			}, 701);
+			curIdx = 0;
+		};
+	};
+
+	// 다음버튼 클릭
+	btnPeopleNext.addEventListener('click', () => {
+		if (click) {
+			clearInterval(settingPeople); // 자동재생 중지
+			
+			nextPeople();
+
+			autoPlayPeople();
+
+			click = !click;
+
+			// transition(.7s) 완료 후 클릭이 또 가능하도록
+			setTimeout(() => {
+				click = true;
+			}, 700)
+		}		
+	});
+
+	// 이전 페이지로 이동
+	function prevPeople() {
+		peopleList.style.transition = '.7s';
+		peopleList.style.transform = `translateX(-${peopleInfoWidth * (curIdx + 3)}%`;
+
+		--curIdx;
+
+		if (curIdx === -4) {
+			setTimeout(() => {
+				peopleList.style.transition = '0s';
+				peopleList.style.transform = `translateX(-${peopleInfoWidth * peopleLen}%`;
+			}, 701);
+			curIdx = peopleLen / 2;
+		};
+	};
+
+	// 이전버튼 클릭
+	btnPeoplePrev.addEventListener('click', () => {
+		if (click) {
+			clearInterval(settingPeople); // 자동재생 중지
+			
+			prevPeople();
+
+			autoPlayPeople();
+
+			click = !click;
+
+			// transition(.7s) 완료 후 클릭이 또 가능하도록
+			setTimeout(() => {
+				click = true;
+			}, 700)
+		}
+	});
+	</script>
+	<!-- 푸터 -->
+	<footer>
+		<div class="footer_inner">
+			<ul class="footer_menu">
+				<li>
+					<a href="">
+						보고서 다운로드
+					</a>
+				</li>
+				<li>
+					<a href="javascript:immunity();">
+						면책공고
+					</a>
+					<div class="footer_popup immunity">
+						<div class="cont">
+							<h6>면책공고</h6>
+							<p>본 웹사이트의 모든 내용은 오로지 사단법인 두루의 소개를 목적으로 제공된 것이며, 법률적 자문이나 해석을 위하여 제공된 것이 아닙니다. 본 웹사이트의 내용에 근거하여 어떠한 조치를 함에 있어서 반드시 법률 자문을 구하셔야 합니다.</p>
+							<a href="javascript:immunityClose();" class="btn_footer_close">닫기</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="javascript:accesibility();">
+						웹접근성안내
+					</a>
+					<div class="footer_popup accesibility">
+						<div class="cont">
+							<h6>웹접근성안내</h6>
+							<p>사단법인 두루는 장애인 및 비장애인 누구나 편리하게 서비스를 이용할 수 있도록 웹접근성 준수 및 개선을 위하여 노력하고 있습니다. 앞으로도 모든 사용자들의 편리한 이용을 위하여 최선을 다하겠습니다.</p>
+							<a href="javascript:accesibilityClose();" class="btn_footer_close">닫기</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<address>서울 서대문구 충정로 60 KT&amp;G 서대문타워 8층 (우)03740</address>
+			<p class="tel">
+				<span>
+					TEL<a href="tel:02-6200-1853"> 02-6200-1853</a>
+				</span>
+				<span>
+					FAX 02-6200-0811</a>
+				</span>
+			</p>
+			<p class="copyright">© DUROO. ALL RIGHTS RESERVED.</p>
+		</div>
+	</footer>
+	<!-- 푸터 스크립트 -->
+	<script>
+	// 면책공고
+	const footerPopupImmunity = document.querySelector('.footer_popup.immunity');
+	const btnFooterClose = document.querySelector('.btn_footer_close');
+
+	function immunity() {
+		footerPopupImmunity.style.display = 'block';
+	}
+	function immunityClose() {
+		footerPopupImmunity.style.display = 'none';
+	}
+
+	// 웹접근성안내
+	const footerPopupAccesibility = document.querySelector('.footer_popup.accesibility');
+
+	function accesibility() {
+		footerPopupAccesibility.style.display = 'block';
+	}
+	function accesibilityClose() {
+		footerPopupAccesibility.style.display = 'none';
+	}
+	</script>
+</div>
+</body>
+</html>
