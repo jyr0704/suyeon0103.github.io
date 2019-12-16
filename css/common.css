@@ -26,28 +26,71 @@ img {vertical-align: top;}
 em {font-style: normal;}
 i {font-style: normal;}
 address {font-style: normal;}
+button {outline: 0;}
 
 /* header */
+header {display: none;}
 .gnb {display: flex; justify-content: center;}
 .gnb > li {margin: 0 30px;}
 .gnb > li > a {display: block; padding: 20px; font-size: 20px; font-weight: 700; letter-spacing: -1px;}
 
 /* common */
-.inner {width: 1280px; margin: 0 auto;}
-h2 {position: relative; margin: 30px 0; font-size: 25px; letter-spacing: -1px;}
-h2::after {position: absolute; top: 10px; left: 50px; right: 0; content: ''; height: 3px; background-color: #000;}
+.inner {position: relative; width: 1280px; margin: 0 auto;}
+h2 {position: relative; padding: 60px 0; font-size: 40px; font-weight: 300; letter-spacing: -3px;}
+h2::after {position: absolute; top: 50%; left: 235px; right: 0; content: ''; height: 2px; background-color: #a69eb0; transform: translateY(-50%);}
+h3 {font-size: 26px; font-weight: 400; letter-spacing: -1px;}
+.num_portfolio {margin-right: 3px; color: #a69eb0; font-size: 40px; font-weight: 300;}
+.summary {margin: 40px 0; font-size: 20px; font-weight: 300;}
+.point > li {position: relative; padding-left: 20px; font-size: 17px;}
+.point > li::before {position: absolute; top: 3px; left: 0; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
+.point > li + li {margin-top: 18px}
+.btn_area {margin: 40px 0; text-align: center;}
+.btn_area .btn_goto {display: inline-block; width: 80px; padding: 7px 0; border-radius: 16px; background-color: #a69eb0; color: #fff; letter-spacing: -1px;}
+.btn_area .btn_goto:hover {background-color: #766d81;}
+.file_link {font-size: 15px;}
+.file_link th {padding: 11px; border-bottom: 1px solid #e0e0e0; background-color: #f0f0f0;}
+.file_link th#col1 {width: 150px; padding-left: 25px;}
+.file_link td {padding: 11px; border-bottom: 1px solid #e0e0e0;}
+.file_link td .category {padding: 3px; margin-left: 14px; border-radius: 4px; color: #fff; font-size: 12px;}
+.file_link td .category.html {background-color: #ff702a;}
+.file_link td .category.css {background-color: #00bfdd;}
+.file_link td .category.js {padding: 2px 7px; background-color: #ffca28;}
+.file_link td a {color: #a69eb0;}
+.file_link td a:hover {color: #766d81;}
+.hidden_text {position: absolute; display: inline-block; text-indent: -9999px;}
 
 /* main */
-.introduce {}
-.skills {height: 500px; background-color: #f0f0f0;}
-.portfolio {}
-.portfolio .portfolio_list {}
-.portfolio .portfolio_list > li >img {width: 600px;}
-
+main {position: relative; margin-bottom: 250px; background-color: #fff; z-index: 100;}
+.introduce {height: 1000px;}
+.introduce .intro_main {position: absolute; top: 160px; left: 5%; width: 55%; height: 450px; border: 1px solid #a69eb0; background-color: #fff; z-index: 100;}
+.introduce .intro_sub {position: absolute; top: 250px; right: 5%; width: 45%; height: 450px; background-color: #f0f0f0;}
+.skills {background-color: #f0f0f0;}
+.skills .skill_list {display: flex; justify-content: center; padding-bottom: 80px;}
+.skills .skill_list > li {width: 25%; color: #766d81; font-size: 26px; letter-spacing: -1px;}
+.skills .skill_list > li > ul {margin-top: 30px;}
+.skills .skill_list > li > ul > li {position: relative; padding-left: 20px; color: #333; font-size: 17px;}
+.skills .skill_list > li > ul > li::before {position: absolute; top: 3px; left: 0; content: ''; width: 6px; height: 6px; border-radius: 100%; background-color: #a69eb0;}
+.skills .skill_list > li > ul > li + li {margin-top: 18px;}
+.portfolio {padding-bottom: 80px;}
+.portfolio h2 {padding: 80px 0;}
+.portfolio h2::after {left: 318px;}
+.portfolio .portfolio_list > li {display: flex;}
+.portfolio .portfolio_list > li + li {margin-top: 200px;}
+.portfolio .portfolio_list > li img {width: 700px;}
+.portfolio .portfolio_list > li:nth-child(odd) img {margin-right: 110px;}
+.portfolio .portfolio_list > li:nth-child(even) img {margin-left: 110px;}
+.portfolio .portfolio_list > li .portfolio_cont {padding-top: 40px;}
+.portfolio .portfolio_list > li:nth-child(3) .portfolio_cont {padding-top: 0;}
+.portfolio .portfolio_list > li:nth-child(4) .portfolio_cont {padding-top: 0;}
+.portfolio .portfolio_list > li:nth-child(6) .portfolio_cont {padding-top: 0;}
+.btn_top {visibility: hidden; position: fixed; bottom: 24px; right: 32px; width: 58px; height: 58px; border: 0; background-color: transparent; text-align: center; color: #fff; font-size: 15px; font-weight: 500; cursor: pointer;}
+.btn_top::before {position: absolute; top: 0; left: 0; content: ''; width: 100%; height: 100%; border-radius: 5px; background-color: #a69eb0; transition: all 0.2s linear;}
+.btn_top::after {position: absolute; top: 50%; left: 0; right: 0; content: 'TOP'; transform: translateY(-50%);}
+.btn_top:hover::before {border-radius: 12px; background-color: #766d81; transform: rotate(-45deg) scale(0.8, 0.8);}
 
 /* footer */
-
-/* 1600px 이하 */
-@media screen and (max-width: 1600px) {
-
-}
+footer {position: fixed; bottom: 0; left: 0; right: 0; padding:20px 0 50px; background-color: #f0f0f0; text-align: center;}
+footer h2 {padding: 30px 0; font-size: 33px; letter-spacing: -1px;}
+footer h2::after {display: none;}
+.contact_list > li i {margin-right: 7px;}
+.contact_list > li + li {margin-top: 15px;}
