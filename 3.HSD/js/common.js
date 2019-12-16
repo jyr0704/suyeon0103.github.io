@@ -12,22 +12,19 @@
 		bgLnb.classList.remove('active');
 	});
 
-	// 스크롤 99 이상 시 헤더 변경
+	// 스크롤에 따른 헤더변화
 	const html = document.querySelector('html');
 	const headerMain = html.querySelector('.header.main');
 	let lastScroll = 0;
 
 	window.addEventListener('scroll', () => {
 		let scrollValue = html.scrollTop;
-		console.log(scrollValue);
 
 		if (scrollValue > 112) {
 			if (scrollValue > lastScroll) {
-				console.log('scroll down');
 				headerMain.style.display = 'block';
 				headerMain.classList.add('fix');
 			} else {
-				console.log('scroll up');
 				headerMain.style.display = 'none';
 			}
 		} else {

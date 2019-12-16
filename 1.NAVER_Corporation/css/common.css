@@ -22,27 +22,10 @@ a {color: #000; text-decoration: none;}
 em {font-style: normal;}
 * {box-sizing: border-box;}
 
-/* layout */
-header {position: relative; min-width: 1100px;}
-.header_inner {max-width: 1600px; height: 80px; margin: 0 auto; text-align: center;}
-footer {background-color: #f8f9fa;}
-.footer_inner {position: relative; max-width: 1600px; height: 160px; margin: 0 auto; font-size: 14px; text-align: center;}
-
-/* common */
-li.inclu_icon > a {position: relative;}
-li.inclu_icon > a::after {position: absolute; content: ''; display: block; width: 18px; height: 18px; background: url('../images/sprite.png') no-repeat; background-position: -81px 0;}
-ul.breadcrumbs {max-width: 1600px; margin: 0 auto; padding: 0 0 36px 30px;}
-ul.breadcrumbs::after {content: ''; display: block; clear: both;}
-ul.breadcrumbs > li {position: relative; float: left; margin-top: -2px; padding-right: 25px;}
-ul.breadcrumbs > li::after {position: absolute; top: 5px; right: 10px; content: ''; display: block; width: 5px; height: 7px; background: url('../images/sprite.png') no-repeat -103px 0;}
-ul.breadcrumbs > li.location {padding-right: 0;}
-ul.breadcrumbs > li > a {color: #878890; font-size: 12px;}
-ul.breadcrumbs > li.location > a {color: #212121;}
-.contents_head {text-align: center;}
-h2.page_title {margin-bottom: 30px; color: #212121; font-size: 42px; font-weight: 800; letter-spacing: -2.5px;}
-p.page_info {margin-bottom: 25px; color: #333; line-height: 32px; font-size: 20px; letter-spacing: -.2px;}
-
 /* header */
+.header_wrap {position: relative; top: 0; left: 0; right: 0; min-width: 1100px; background-color: #fff; z-index: 200;}
+.header_wrap.fix {position: fixed; top: 0; transition: top .4s ease-in-out;}
+.header_inner {max-width: 1600px; height: 80px; margin: 0 auto; text-align: center;}
 h1.header_logo {float: left; margin: 32px 0 0 30px;}
 h1.header_logo > a {display: block; width: 87px; height: 17px; text-indent: -9999px; background: url('../images/header_logo.png') no-repeat;}
 nav {display: inline-block;}
@@ -115,6 +98,19 @@ ul.list_depth2 {margin-top: 8px;}
 ul.list_depth2 > li + li {margin-top: 5px;}
 ul.list_depth2 > li > a {font-size: 14px; font-weight: 300; opacity: 0.8;}
 
+/* common */
+li.inclu_icon > a {position: relative;}
+li.inclu_icon > a::after {position: absolute; content: ''; display: block; width: 18px; height: 18px; background: url('../images/sprite.png') no-repeat; background-position: -81px 0;}
+ul.breadcrumbs {max-width: 1600px; margin: 0 auto; padding: 0 0 36px 30px;}
+ul.breadcrumbs::after {content: ''; display: block; clear: both;}
+ul.breadcrumbs > li {position: relative; float: left; margin-top: -2px; padding-right: 25px;}
+ul.breadcrumbs > li::after {position: absolute; top: 5px; right: 10px; content: ''; display: block; width: 5px; height: 7px; background: url('../images/sprite.png') no-repeat -103px 0;}
+ul.breadcrumbs > li.location {padding-right: 0;}
+ul.breadcrumbs > li > a {color: #878890; font-size: 12px;}
+ul.breadcrumbs > li.location > a {color: #212121;}
+.contents_head {text-align: center;}
+h2.page_title {margin-bottom: 30px; color: #212121; font-size: 42px; font-weight: 800; letter-spacing: -2.5px;}
+p.page_info {margin-bottom: 25px; color: #333; line-height: 32px; font-size: 20px; letter-spacing: -.2px;}
 
 /* main */
 .contents.main {min-width: 1100px;}
@@ -265,7 +261,8 @@ ol.order_script > li > ul > li::before {position: absolute; top: 7px; left: 0; c
 .btn_area > a + a {margin-left: 20px;}
 
 /* footer */
-.footer_inner {padding-top: 74px;}
+footer {background-color: #f8f9fa;}
+.footer_inner {position: relative; max-width: 1600px; height: 160px; padding-top: 74px; margin: 0 auto; font-size: 14px; text-align: center;}
 .footer_logo {position: absolute; left: 30px; top: 76px;}
 .footer_menu {position: absolute; left: 115px; top: 74px;}
 .footer_menu > li {position: relative; float: left; margin: 0 10px;}
