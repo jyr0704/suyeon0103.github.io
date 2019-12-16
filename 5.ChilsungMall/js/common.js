@@ -46,7 +46,7 @@
 	let click = true;
 
 	slideList.style.width = `${(940 + 70) * (slideLen + 4)}px`; // ul 너비 지정
-	slideList.style.transform = 'translateX(-1778px)'; // ul 초기위치 지정
+	slideList.style.transform = 'translateX(-2020px)'; // ul 초기위치 지정
 
 	// 슬라이드 복제, 붙이기
 	const slidePageFirst = slideList.firstElementChild.cloneNode(true);
@@ -64,7 +64,7 @@
 	function autoPlay() {
 		setting = setInterval(() => {
 			slideList.style.transition = '.5s';
-			slideList.style.transform = `translateX(-${768 + 1010 * (curIndex + 2)}px`;
+			slideList.style.transform = `translateX(-${1010 * (curIndex + 3)}px`;
 
 			curIndex++;
 
@@ -73,7 +73,7 @@
 			if (curIndex === slideLen) {
 				setTimeout(() => {
 					slideList.style.transition = '0s';
-					slideList.style.transform = 'translateX(-1778px)';
+					slideList.style.transform = 'translateX(-2020px)';
 				},501);
 				curIndex = 0;
 				slidePageCurrent.textContent = curIndex + 1;
@@ -108,7 +108,7 @@
 	// 다음 페이지로 이동
 	function nextSlide() {
 		slideList.style.transition = '.5s';
-		slideList.style.transform = `translateX(-${768 + 1010 * (curIndex + 2)}px`;
+		slideList.style.transform = `translateX(-${1010 * (curIndex + 3)}px`;
 
 		curIndex++;
 
@@ -117,7 +117,7 @@
 		if (curIndex === slideLen) {
 			setTimeout(() => {
 				slideList.style.transition = '0s';
-				slideList.style.transform = 'translateX(-1778px)';
+				slideList.style.transform = 'translateX(-2020px)';
 			}, 501);
 			curIndex = 0;
 			slidePageCurrent.textContent = curIndex + 1;
@@ -158,7 +158,7 @@
 	// 이전 페이지로 이동
 	function prevSlide() {
 		slideList.style.transition = '.5s';
-		slideList.style.transform = `translateX(-${768 + 1010 * curIndex}px`;
+		slideList.style.transform = `translateX(-${1010 * (curIndex + 1)}px`;
 
 		curIndex--;
 
@@ -167,7 +167,7 @@
 		if (curIndex === -1) {
 			setTimeout(() => {
 				slideList.style.transition = '0s';
-				slideList.style.transform = `translateX(-${768 + 1010 * slideLen}px`;
+				slideList.style.transform = `translateX(-${1010 * (slideLen + 1)}px`;
 			}, 501);
 			curIndex = slideLen - 1;
 			slidePageCurrent.textContent = curIndex + 1;

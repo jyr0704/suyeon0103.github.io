@@ -134,7 +134,8 @@ i.icon.new {background-color: #07afda;}
 
 /* main */
 main {position: relative;}
-.main_slide_area {position: relative; width: 100%; margin: 36px 0 75px; overflow: hidden;}
+.main_slide {width: 100%; overflow: hidden;}
+.main_slide_area {position: relative; width: 1010px; margin: 36px auto 75px;}
 .slide_page {float: left; margin: 0 35px;}
 .slide_page > a {width: 940px; height: 522px;}
 .slide_page > a > img {width: 100%;}
