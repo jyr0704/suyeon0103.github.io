@@ -125,5 +125,5 @@ footer h2::after {display: none;}
 	.skills .skill_list > li > ul > li > span {font-size: 16px;}
 	.portfolio h2 {padding: 60px 0;}
 	.portfolio h2::after {left: 215px;}
-	.btn_top {width: 50px; height: 50px;}
+	.btn_top {display: none;}
 }
