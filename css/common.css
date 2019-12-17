@@ -111,4 +111,11 @@ footer h2::after {display: none;}
 
 /* 414 이하 */
 @media screen and (max-width: 414px) {
+	/* common */
+	h2 {font-size: 30px;}
+	h2::after {left: 168px;}
+
+	/* main */
+	.skills .skill_list > li {font-size: 20px;}
+	.skills .skill_list > li > ul > li > span {font-size: 16px;}
 }
