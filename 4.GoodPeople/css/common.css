@@ -203,9 +203,7 @@ ul.news_list > li > a > .news_cont > h3 {color: #fff; font-size: 22px; font-weig
 .campaign_review ul.review_list::after {content: ''; display: block; clear: both;}
 .campaign_review ul.review_list > li {position: relative; float: left; width: 100%; height: 370px; overflow: hidden;}
 .campaign_review ul.review_list > li img {position: absolute; top: 0; left: 50%; margin-left: -900px;}
-.campaign_review ul.review_list > li > .review_cont {position: absolute; top: 76px; left: 100px;}
-.campaign_review ul.review_list > li:nth-child(1) > .review_cont {top: 54px;}
-.campaign_review ul.review_list > li:nth-child(7) > .review_cont {top: 54px;}
+.campaign_review ul.review_list > li > .review_cont {position: absolute; top: 50%; left: 100px; transform: translateY(-50%);}
 .campaign_review ul.review_list > li > .review_cont > h3 {margin-bottom: 40px; color: #1f1f1f; font-size: 18px; font-weight: 500;}
 .campaign_review ul.review_list > li:nth-child(5) > .review_cont > h3 {color: #fff;}
 .campaign_review ul.review_list > li:nth-child(6) > .review_cont > h3 {color: #fff;}
@@ -462,7 +460,7 @@ ul.fix_menu_list > li.btn_top > a > span::before {position: absolute; bottom: 25
 	.support {padding: 25px 0;}
 	ul.support_list > li::after {display: none;}
 	ul.support_list > li > a {padding: 45px 0 0 0; text-align: center;}
-	ul.support_list > li > a::before {top: 0; left: 115px;}
+	ul.support_list > li > a::before {top: 0; left: 50%; transform: translateX(-50%);}
 	ul.support_list > li:nth-child(3) > a::before {top: 0;}
 	ul.support_list > li:nth-child(3) > a:hover::before {top: 0;}
 	ul.support_list > li:nth-child(4) > a::before {top: 0;}
@@ -591,13 +589,15 @@ ul.fix_menu_list > li.btn_top > a > span::before {position: absolute; bottom: 25
 	.support {padding: 20px 0;}
 	ul.support_list > li + li::before {display: none;}
 	ul.support_list > li > a {font-size: 13px;}
-	ul.support_list > li > a::before {left: 68px;}
 	.campaign {padding: 40px 0;}
 	.campaign h3 {margin-bottom: 20px; font-size: 23px;}
 	ul.campaign_list {margin: 0 -5px;}
 	ul.campaign_list > li {width: 100%; max-width: 100%;}
 	ul.campaign_list > li:nth-child(n+2) {margin-top: 10px;}
 	ul.campaign_list .campaign_cont {height: 70px;}
+	ul.campaign_list li:nth-child(1) .campaign_cont .progress_bar {width: 29%;}
+	ul.campaign_list li:nth-child(2) .campaign_cont .progress_bar {width: 46%;}
+	ul.campaign_list li:nth-child(3) .campaign_cont .progress_bar {width: 76%;}
 	ul.campaign_list .campaign_cont .campaign_text {height: 60px;}
 	ul.campaign_list .campaign_cont .campaign_text > h4 {font-size: 16px;}
 	.campaign_more {margin: 20px 15px 0;}
@@ -610,7 +610,7 @@ ul.fix_menu_list > li.btn_top > a > span::before {position: absolute; bottom: 25
 	ul.news_list > li > a > .news_cont > .news_label {width: 85px; line-height: 30px; margin-bottom: 15px; font-size: 12px;}
 	ul.news_list > li > a > .news_cont > h3 {font-size: 16px;}
 	.campaign_review ul.review_list > li {height: 180px;}
-	.campaign_review ul.review_list > li > .review_cont {top: 0; left: 0; right: 0; padding: 36px 0; text-align: center;}
+	.campaign_review ul.review_list > li > .review_cont {left: 0; right: 0; text-align: center;}
 	.campaign_review ul.review_list > li > .review_cont > h3 {margin-bottom: 15px;  font-size: 13px;}
 	.campaign_review ul.review_list > li > .review_cont > p {line-height: 22px; font-size: 15px; font-weight: 400;}
 	.campaign_review ul.review_list > li > .review_cont > .btn_more {width: 120px; line-height: 33px; margin: 20px auto 0; font-size: 13px;}
@@ -671,4 +671,10 @@ ul.fix_menu_list > li.btn_top > a > span::before {position: absolute; bottom: 25
 	ul.fix_menu_list > li.btn_top {position: fixed; left: 0; bottom: 52px; width: 52px; height: 52px; background: rgba(20,65,153,.9);}
 	ul.fix_menu_list > li.btn_top > a > span {top: 21px; color: #fff; font-size: 13px;}
 	ul.fix_menu_list > li.btn_top > a > span::before {bottom: 20px;}
+}
+
+/* 454px 이하 */
+@media screen and (max-width: 454px) {
+	/* main */
+	.campaign_review ul.review_list > li img {height: 100%;}
 }
