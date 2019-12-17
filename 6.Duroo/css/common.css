@@ -183,7 +183,7 @@ footer {border-top: 1px solid #e1e1e1;}
 .footer_inner .tel > span + span {margin-left: 12px;}
 .footer_inner .copyright {margin-top: 24px; color: #a1a1a1;}
 .footer_popup {display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 300;}
-.footer_popup > .cont {position: absolute; top: 50%; left: 0; right: 0; width: 520px; max-width: calc(100% - 40px); height: 350px; padding: 95px 60px 0; margin: 0 auto; background-color: #fff; transform: translateY(-50%);}
+.footer_popup > .cont {position: absolute; top: 50%; left: 0; right: 0; width: 520px; max-width: calc(100% - 40px); padding: 95px 60px 76px; margin: 0 auto; background-color: #fff; transform: translateY(-50%);}
 .footer_popup > .cont > h6 {margin-bottom: 35px; text-align: center; font-size: 36px; font-weight: 500; letter-spacing: -0.05em;}
 .footer_popup > .cont > p {line-height: 30px; text-align: center; font-size: 16px; word-break: keep-all;}
 .footer_popup > .cont > .btn_footer_close {position: absolute; top: 17px; right: 17px; width: 47px; height: 47px; text-indent: -9999px;}
@@ -283,7 +283,7 @@ footer {border-top: 1px solid #e1e1e1;}
 	.footer_menu > li + li {padding-left: 8px; margin-left: 7px;}
 	.footer_menu > li + li::before {top: 5px; height: 12px;}
 	.footer_inner .copyright {margin-top: 20px;}
-	.footer_popup > .cont {height: 308px; padding: 88px 38px 0;}
+	.footer_popup > .cont {padding: 88px 38px 53px;}
 	.footer_popup > .cont > h6 {font-size: 28px;}
 	.footer_popup > .cont > p {line-height: 28px;}
 	.footer_popup > .cont > .btn_footer_close {top: 0; right: 0; width: 71px; height: 71px;}
