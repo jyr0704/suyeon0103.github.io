@@ -114,8 +114,16 @@ footer h2::after {display: none;}
 	/* common */
 	h2 {font-size: 28px;}
 	h2::after {left: 160px;}
+	h3 {font-size: 23px;}
+	.num_portfolio {font-size: 37px;}
+	.summary {margin: 30px 0; font-size: 18px;}
+	.point > li > span {font-size: 16px;}
 
 	/* main */
 	.skills .skill_list > li {font-size: 22px;}
+	.skills .skill_list > li + li {margin-top: 52px;}
 	.skills .skill_list > li > ul > li > span {font-size: 16px;}
+	.portfolio h2 {padding: 60px 0;}
+	.portfolio h2::after {left: 215px;}
+	.btn_top {width: 50px; height: 50px;}
 }
