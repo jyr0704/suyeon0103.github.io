@@ -1,31 +1,25 @@
 // 초기 선언
 const slideListArea = document.querySelector('.slide_list_area');
-
 const slideList = slideListArea.querySelector('ul.slide_list');
 const slidePage = slideList.querySelectorAll('.slide_page');
 const slideLen = slidePage.length; // 슬라이드 총 길이
-
 const btnSlideArea = slideListArea.querySelector('.btn_slide_area');
 const btnSlide = btnSlideArea.querySelectorAll('.btn_slide');
 const btnPlay = btnSlideArea.querySelector('.btn.play');
 const btnStop = btnSlideArea.querySelector('.btn.stop');
-
 const btnSlideAreaVertical = slideListArea.querySelector('.btn_slide_area_vertical');
 const btnSlideVertical = btnSlideAreaVertical.querySelectorAll('.btn_slide_vertical');
 const btnPlayVertical = btnSlideAreaVertical.querySelector('.btn.play_vertical');
 const btnStopVertical = btnSlideAreaVertical.querySelector('.btn.stop_vertical');
-
 const btnNext = slideListArea.querySelector('.btn.next');
 const btnNextVertical = slideListArea.querySelector('.btn.next_vertical');
 const btnPrev = slideListArea.querySelector('.btn.prev');
 const btnPrevVertical = slideListArea.querySelector('.btn.prev_vertical');
-
 let curIndex = 0;
 let click = true;
 let curBtn = btnSlide[curIndex]; // 활성화 버튼 선언
 let curBtnVertical = btnSlideVertical[curIndex]; // 활성화 버튼 선언
 let curSlide = slidePage[curIndex]; // 활성화 슬라이드 선언
-
 let setting; // clear를 위한 전역함수 선언
 let settingVertical; // clear를 위한 전역함수 선언
 
@@ -75,7 +69,7 @@ function slideWidthSetting() {
 	slideWidth = document.getElementById('slide_width').value; // 입력된 값 선언
 
 	// setting
-	slideListArea.style.width = `${slideWidth}px'`; // area 가로넓이 지정
+	slideListArea.style.width = `${slideWidth}px`; // area 가로넓이 지정
 	slideList.style.width = `${slideWidth * (slideLen + 2)}px`; // ul 가로넓이 지정
 	slideList.style.transform = `translate(-${slideWidth}px, 0)`; // 초기 ul 위치
 	slidePage.forEach((element) => {
