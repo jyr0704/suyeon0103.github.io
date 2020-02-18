@@ -105,7 +105,7 @@ function slideIniSetting() {
 	curIndex = 0;
 	curSlide = slidePage[0];
 
-	if (btnDirectHori.style.borderColor === 'red') { // 수평방향
+	if (btnDirectHori.style.borderColor === 'black') { // 수평방향
 		curBtn = btnSlide[0];
 		slideList.style.transform = `translate(-${slideWidth}px, 0)`;
 
@@ -507,7 +507,7 @@ function horizontalSetting() {
 		slidePage[i].classList.remove('active');
 	}; // active 전체 제거
 
-	btnDirectHori.style.border = '2px solid red';
+	btnDirectHori.style.border = '2px solid black';
 	btnDirectVerti.style.border = '1px solid #d8d8d8';
 	btnSlideArea.style.display = 'block';
 	btnSlideAreaVertical.style.display = 'none';
@@ -669,7 +669,7 @@ function verticalSetting() {
 	}; // active 전체 제거
 
 	btnDirectHori.style.border = '1px solid #d8d8d8';
-	btnDirectVerti.style.border = '2px solid red';
+	btnDirectVerti.style.border = '2px solid black';
 	btnSlideArea.style.display = 'none';
 	btnSlideAreaVertical.style.display = 'block';
 	btnStopVertical.style.display = 'none';

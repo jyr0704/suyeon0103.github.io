@@ -14,15 +14,6 @@
 	
 	<!-- 메인 -->
 	<main>
-		<div class="setting_area">
-			<p style="color: red">※ 슬라이드 방향부터 선택하세요 ※</p>
-			<ul class="setting_list">
-				<li>
-					<button class="direction hori" onclick="horizontalSetting()">수평방향</button>
-					<button class="direction verti" onclick="verticalSetting()">수직방향</button>
-				</li>
-			</ul>
-		</div>
 		<div class="slide_list_area">
 			<ul class="slide_list">
 				<li class="slide_page">
@@ -154,34 +145,45 @@
 			</a>
 		</div>
 		<div class="setting_area">
-			<p>&lt; 슬라이드 기타설정 &gt;</p>
-			<ul class="setting_list">
-				<li>
-					<span>슬라이드의 가로넓이 : </span><input type="text" id="slide_width" placeholder="숫자만 입력 (단위:px)">
-					<button onclick="slideWidthSetting()">확인</button>
-					<em>&lowast; 초기값 : 1000px</em>
-				</li>
-				<li>
-					<span>슬라이드의 세로높이 : </span><input type="text" id="slide_height" placeholder="숫자만 입력 (단위:px)">
-					<button onclick="slideHeightSetting()">확인</button>
-					<em>&lowast; 초기값 : 400px</em>
-				</li>
-				<li>
-					<span>자동재생 시 속도 : </span><input type="text" id="play_speed" placeholder="숫자만 입력 (단위:초)">
-					<button onclick="playSpeedSetting()">확인</button>
-					<em>&lowast; 초기값 : 3초</em>
-				</li>
-				<li>
-					<span>자동재생 시 횟수 : </span>
-					<input type="radio" class="check" name="loop" value="infinite" checked="checked" onclick="playLoopSetting()"><span class="check_value">무한루프</span>
-					<input type="radio" class="check" name="loop" value="once" onclick="playLoopSetting()"><span class="check_value">1회만 재생</span>
-				</li>
-				<li>
-					<span>마우스를 올릴 경우 : </span>
-					<input type="radio" class="check" name="mouse" value="ignore" checked="checked" onclick="mouseEventSetting()"><span class="check_value">이벤트없음</span>
-					<input type="radio" class="check" name="mouse" value="pause" onclick="mouseEventSetting()"><span class="check_value">자동재생 일시정지</span>
-				</li>
-			</ul>
+			<div class="settig_col">
+				<span class="title">STEP 1. 슬라이드 방향설정</span>
+				<ul class="setting_list dir">
+					<li>
+						<button class="direction hori" onclick="horizontalSetting()">수평방향</button>
+						<button class="direction verti" onclick="verticalSetting()">수직방향</button>
+					</li>
+				</ul>
+			</div>
+			<div class="settig_col">
+				<span class="title">STEP 2. 슬라이드 기타설정</span>
+				<ul class="setting_list">
+					<li>
+						<span>✓ 슬라이드의 가로넓이 : </span><input type="text" id="slide_width" placeholder="숫자만 입력 (단위:px)">
+						<button onclick="slideWidthSetting()">확인</button>
+						<em>&lowast; 초기값 : 1000px</em>
+					</li>
+					<li>
+						<span>✓ 슬라이드의 세로높이 : </span><input type="text" id="slide_height" placeholder="숫자만 입력 (단위:px)">
+						<button onclick="slideHeightSetting()">확인</button>
+						<em>&lowast; 초기값 : 400px</em>
+					</li>
+					<li>
+						<span>✓ 자동재생 시 속도 : </span><input type="text" id="play_speed" placeholder="숫자만 입력 (단위:초)">
+						<button onclick="playSpeedSetting()">확인</button>
+						<em>&lowast; 초기값 : 3초</em>
+					</li>
+					<li>
+						<span>✓ 자동재생 시 횟수 : </span>
+						<input type="radio" class="check" name="loop" value="infinite" checked="checked" onclick="playLoopSetting()"><span class="check_value">무한루프</span>
+						<input type="radio" class="check" name="loop" value="once" onclick="playLoopSetting()"><span class="check_value">1회만 재생</span>
+					</li>
+					<li>
+						<span>✓ 마우스를 올릴 경우 : </span>
+						<input type="radio" class="check" name="mouse" value="ignore" checked="checked" onclick="mouseEventSetting()"><span class="check_value">이벤트없음</span>
+						<input type="radio" class="check" name="mouse" value="pause" onclick="mouseEventSetting()"><span class="check_value">자동재생 일시정지</span>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</main>
 	<script src="js/common.js"></script>
